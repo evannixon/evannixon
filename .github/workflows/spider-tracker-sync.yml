@@ -1,0 +1,49 @@
+name: Sync Spider Tracker Contribution Matrix
+
+on:
+  schedule:
+    # Run every 6 hours to sync real-time contributions
+    - cron: '0 */6 * * *'
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'assets/spider_tracker.svg'
+      - 'heartbeat.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-tracker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Update Spider Tracker SVG from GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: evannixon
+        run: |
+          python scripts/update_spider_tracker.py
+
+      - name: Commit & Push Updated Tracker
+        run: |
+          git config --local user.name "Spider-Bot"
+          git config --local user.email "spiderbot@users.noreply.github.com"
+          git add assets/spider_tracker.svg
+          if git diff --staged --quiet; then
+            echo "No changes in spider tracker SVG"
+          else
+            git commit -m "chore(tracker): sync real-time contribution radar matrix [skip ci]"
+            git push origin main
+          fi
