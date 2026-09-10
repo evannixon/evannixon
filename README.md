@@ -151,6 +151,10 @@ Threat: Low  |  Web-Fluid: 100%  |  Status: Crouched on Rooftop
 
 > *"Some days are hard, but someone has to keep the neighborhood running smoothly."*
 
+<p align="center">
+  <img src="assets/spider_tracker.svg" alt="Spider Patrol Contribution Matrix" width="100%" />
+</p>
+
 | 🕷️ Suit Protocol | 📊 Patrol Metric | ⚡ Status |
 | :--- | :--- | :---: |
 | **Mask HUD** | `Daily City Watch & Commits` | Active 🟢 |
