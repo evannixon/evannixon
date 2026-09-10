@@ -176,6 +176,18 @@ Threat: Low  |  Web-Fluid: 100%  |  Status: Crouched on Rooftop
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/evannixon?tab=achievements" target="_blank" title="Lihat Koleksi Achievements Resmi GitHub Evan">
+    <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/pull-shark-default.png" width="60" alt="Pull Shark" title="Pull Shark: Merged Pull Requests" />
+    <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/quickdraw-default.png" width="60" alt="Quickdraw" title="Quickdraw: Closed Issue within 5 mins" />
+    <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/yolo-default.png" width="60" alt="YOLO" title="YOLO: Merged PR without review" />
+    <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/pair-extraordinaire-default.png" width="60" alt="Pair Extraordinaire: Co-authored commits" />
+    <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/galaxy-brain-default.png" width="60" alt="Galaxy Brain: Accepted Answer in Discussions" />
+    <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/starstruck-default.png" width="60" alt="Starstruck: Repository with 16+ stars" />
+    <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/heart-on-your-sleeve-default.png" width="60" alt="Heart On Your Sleeve: Reacted with Heart" />
+  </a>
+</p>
+
 ---
 
 <p align="center">
