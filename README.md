@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/banner.jpg" alt="Spider-Man Calm City Skyline" width="100%" style="border-radius: 12px;" />
-</p>
+
 
 <h1 align="center">Evan Nixon</h1>
 
