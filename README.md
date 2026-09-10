@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.jpg" alt="Evan Nixon Banner" width="100%" style="border-radius: 10px;" />
+  <img src="assets/banner.jpg" alt="Spider-Man Calm City Skyline" width="100%" style="border-radius: 12px;" />
 </p>
 
 <h1 align="center">Evan Nixon</h1>
@@ -12,14 +12,14 @@
   <a href="mailto:evannixonpratama1@gmail.com"><img src="https://img.shields.io/badge/Email-evannixonpratama1%40gmail.com-181717?style=flat-square&logo=gmail&logoColor=EA4335" alt="Email"></a>
   <a href="https://github.com/evannixon"><img src="https://img.shields.io/badge/GitHub-evannixon-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
   <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-181717?style=flat-square&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"></a>
-  <img src="https://img.shields.io/badge/Status-Building%20%26%20Automating-00F0FF?style=flat-square" alt="Status">
+  <img src="https://img.shields.io/badge/Vibe-Chill%20%26%20Focused-E23636?style=flat-square" alt="Vibe">
 </p>
 
 ---
 
 ### 🌐 Profile Overview
 
-I build practical software solutions with an emphasis on **backend reliability**, **automated data harvesting**, and **clean user interfaces**. Currently focused on engineering automated pipelines and modern web platforms that streamline workflows and solve concrete problems.
+I build practical software solutions with an emphasis on **backend reliability**, **automated data harvesting**, and **clean user interfaces**. Focused on engineering automated pipelines and modern web platforms that streamline workflows and solve concrete problems.
 
 ```bash
 evan@terminal:~$ neofetch --engineer
@@ -27,7 +27,7 @@ OS: Arch / Linux / Windows
 Role: Software Developer & Automation Specialist
 Stack: Python, PHP, JavaScript, SQL
 Current Mission: Scaling data pipelines & reactive applications
-Streak Bot: Online 24/7 (via GitHub Actions Cron)
+Motto: With great code comes great responsibility 🕷️
 ```
 
 - ⚙️ **Architecture & Backend**: Crafting clean APIs and database structures with PHP (Laravel) and Python.
@@ -70,7 +70,7 @@ Streak Bot: Online 24/7 (via GitHub Actions Cron)
       <p>
         <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
         <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
-        <img src="https://img.shields.io/badge/Automation-FF6F00?style=flat-square" />
+        <img src="https://img.shields.io/badge/Automation-E23636?style=flat-square" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -94,11 +94,12 @@ Streak Bot: Online 24/7 (via GitHub Actions Cron)
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🤖 <a href="https://github.com/evannixon/evannixon">Daily Streak Keeper</a></h3>
-      <p>Self-contained GitHub Actions cron engine that dispatches automated commit heartbeats to maintain a permanent 365-day green contribution streak on GitHub.</p>
+      <h3>🕷️ <a href="https://github.com/evannixon">Web Automation & Scripting</a></h3>
+      <p>Custom extraction scripts, workflow automations, and scheduled tasks tailored for continuous data processing and API integration.</p>
       <p>
-        <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
-        <img src="https://img.shields.io/badge/Cron-00F0FF?style=flat-square" />
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Scraping-00C7B7?style=flat-square" />
+        <img src="https://img.shields.io/badge/Workflow-E23636?style=flat-square" />
       </p>
     </td>
   </tr>
@@ -106,14 +107,14 @@ Streak Bot: Online 24/7 (via GitHub Actions Cron)
 
 ---
 
-### 🐍 Contribution Activity Snake
+### 🕷️ Your Friendly Neighborhood Developer
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/evannixon/evannixon/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/evannixon/evannixon/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/evannixon/evannixon/output/github-contribution-grid-snake.svg" width="100%">
-  </picture>
+  <img src="assets/spiderman.gif" alt="Spider-Man" width="280" style="border-radius: 10px;" />
+</p>
+
+<p align="center">
+  <i>"Swinging through complex codebases, untangling data webs, and building robust systems one commit at a time."</i>
 </p>
 
 ---
@@ -121,16 +122,16 @@ Streak Bot: Online 24/7 (via GitHub Actions Cron)
 ### 📊 GitHub Activity & Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=evannixon&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00F0FF&icon_color=7928CA&text_color=E6EDF3" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=evannixon&theme=tokyonight&hide_border=true&background=00000000&ring=00F0FF&fire=7928CA&currStreakLabel=00F0FF" height="165" alt="Streak Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=evannixon&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=E23636&icon_color=00F0FF&text_color=E6EDF3" height="165" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=evannixon&theme=tokyonight&hide_border=true&background=00000000&ring=E23636&fire=00F0FF&currStreakLabel=E23636" height="165" alt="Streak Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=evannixon&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00F0FF&text_color=E6EDF3" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=evannixon&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=E23636&text_color=E6EDF3" alt="Top Languages" />
 </p>
 
 ---
 
 <p align="center">
-  <sub>Crafted with modern engineering principles &bull; &copy; <b>Evan Nixon</b></sub>
+  <sub>Crafted with chill vibes &amp; Spider-sense &bull; &copy; <b>Evan Nixon</b></sub>
 </p>
