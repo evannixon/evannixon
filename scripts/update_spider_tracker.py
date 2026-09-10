@@ -266,7 +266,7 @@ def generate_svg(calendar_data, output_path):
       <line x1="1" y1="8" x2="15" y2="8" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
 
       <text x="24" y="9" fill="#f1f5f9" font-size="13" font-weight="700" letter-spacing="1.5" class="tech-font">SPIDER-TRACKER // REALTIME RADAR PATROL MATRIX</text>
-      <text x="24" y="22" fill="#64748b" font-size="9" letter-spacing="1" class="tech-font">CLICK ANY NODE TO FILTER THAT DAY'S COMMITS ON GITHUB</text>
+      <text x="24" y="22" fill="#64748b" font-size="9" letter-spacing="1" class="tech-font">LIVE SYNC // REAL-TIME CONTRIBUTION RADAR • @{USERNAME.upper()}</text>
     </a>
 
     <!-- Live Indicator Pill -->

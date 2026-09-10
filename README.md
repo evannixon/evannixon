@@ -154,54 +154,10 @@ Threat: Low  |  Web-Fluid: 100%  |  Status: Crouched on Rooftop
 > *"Some days are hard, but someone has to keep the neighborhood running smoothly."*
 
 <p align="center">
-  <a href="https://github.com/evannixon?tab=overview&from=2026-09-10&to=2026-09-10" target="_blank" rel="noopener noreferrer" title="Klik untuk lihat kontribusi hari ini (10 Sep 2026)">
+  <a href="https://github.com/evannixon?tab=overview" target="_blank" rel="noopener noreferrer">
     <img src="assets/spider_tracker.svg" alt="Spider Patrol Realtime Contribution Matrix" width="100%" />
   </a>
-  <br><br>
-  <!-- Interactive Action Buttons -->
-  <a href="https://github.com/evannixon?tab=overview&from=2026-09-10&to=2026-09-10" target="_blank" title="Buka kontribusi hari ini (10 Sep 2026)">
-    <img src="https://img.shields.io/badge/🟢_HARI_INI-10_Sep_2026_(Live)-e11d48?style=for-the-badge&logo=github&logoColor=white" alt="Hari Ini" />
-  </a>
-  <a href="https://github.com/evannixon?tab=overview&from=2026-09-09&to=2026-09-09" target="_blank" title="Buka kontribusi kemarin (9 Sep 2026)">
-    <img src="https://img.shields.io/badge/⚡_KEMARIN-9_Sep-161b22?style=for-the-badge" alt="Kemarin" />
-  </a>
-  <a href="https://github.com/evannixon?tab=overview&from=2026-09-09&to=2026-09-10" target="_blank" title="Lihat rentang streak aktif">
-    <img src="https://img.shields.io/badge/🔥_CURRENT_STREAK-Sep_9--10-161b22?style=for-the-badge" alt="Streak Aktif" />
-  </a>
-  <a href="assets/spider_tracker.svg" target="_blank" title="Buka Radar SVG Langsung di Tab Baru (Semua 365 kotak bisa diklik per hari!)">
-    <img src="https://img.shields.io/badge/🕸️_RADAR_INTERAKTIF_PER--HARI-Klik_Tiap_Kotak-e11d48?style=for-the-badge" alt="Radar SVG Interaktif" />
-  </a>
-  <br><br>
-  <sub>📅 <b>Navigasi Cepat Aktivitas Bulanan:</b></sub><br>
-  <sub>
-    <a href="https://github.com/evannixon?tab=overview&from=2026-01-01&to=2026-01-31"><b>Jan</b></a> &bull;
-    <a href="https://github.com/evannixon?tab=overview&from=2026-02-01&to=2026-02-28"><b>Feb</b></a> &bull;
-    <a href="https://github.com/evannixon?tab=overview&from=2026-03-01&to=2026-03-31"><b>Mar</b></a> &bull;
-    <a href="https://github.com/evannixon?tab=overview&from=2026-04-01&to=2026-04-30"><b>Apr</b></a> &bull;
-    <a href="https://github.com/evannixon?tab=overview&from=2026-05-01&to=2026-05-31"><b>May</b></a> &bull;
-    <a href="https://github.com/evannixon?tab=overview&from=2026-06-01&to=2026-06-30"><b>Jun</b></a> &bull;
-    <a href="https://github.com/evannixon?tab=overview&from=2026-07-01&to=2026-07-31"><b>Jul</b></a> &bull;
-    <a href="https://github.com/evannixon?tab=overview&from=2026-08-01&to=2026-08-31"><b>Aug</b></a> &bull;
-    <a href="https://github.com/evannixon?tab=overview&from=2026-09-01&to=2026-09-10"><b>Sep (Aktif 🟢)</b></a>
-  </sub>
 </p>
-
-<table align="center" width="100%">
-  <tr>
-    <td width="33%" align="center">
-      <b>🛰️ Live API Tracking</b><br>
-      <sub>Tersinkronisasi otomatis via GitHub Actions dari API kontribusi riil</sub>
-    </td>
-    <td width="33%" align="center">
-      <b>⚡ Real-Time Streak</b><br>
-      <sub>Aktivitas commit harian aktif hingga tanggal sekarang</sub>
-    </td>
-    <td width="33%" align="center">
-      <b>🎯 Dynamic Spider Patrol</b><br>
-      <sub>Spider-drone otomatis merayap mengikuti titik koordinat commit teraktif</sub>
-    </td>
-  </tr>
-</table>
 
 <p align="center">
   <a href="https://github.com/evannixon?tab=overview" target="_blank" title="Lihat Statistik Streak & Timeline Aktivitas GitHub Evan">
