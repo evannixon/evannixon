@@ -501,7 +501,7 @@
 
   <!-- Bottom Legend & Telemetry Bar -->
   <g transform="translate(40, 216)">
-    <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">1386+ LOGGED</tspan> | SYSTEM: <tspan fill="#e11d48" font-weight="700">ONLINE</tspan></text>
+    <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">1387+ LOGGED</tspan> | SYSTEM: <tspan fill="#e11d48" font-weight="700">ONLINE</tspan></text>
 
     <!-- Legend -->
     <g transform="translate(630, 0)">
