@@ -109,25 +109,28 @@ Motto: With great code comes great responsibility 🕷️
 
 ### 🕷️ Your Friendly Neighborhood Developer
 
-<p align="center">
-  <img src="assets/spiderman.gif" alt="Spider-Man" width="280" style="border-radius: 10px;" />
-</p>
+> *"Swinging through complex codebases, untangling data webs, and building robust systems one commit at a time."*
 
 <p align="center">
-  <i>"Swinging through complex codebases, untangling data webs, and building robust systems one commit at a time."</i>
+  <img src="https://img.shields.io/badge/Role-Problem%20Solver-E23636?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+  <img src="https://img.shields.io/badge/Specialty-Backend%20%26%20Data-181717?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Sense-Spider--Sense%20Active-00F0FF?style=for-the-badge" />
 </p>
 
 ---
 
-### 📊 GitHub Activity & Metrics
+### 📊 GitHub Activity & Streak
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=evannixon&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=E23636&icon_color=00F0FF&text_color=E6EDF3" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=evannixon&theme=tokyonight&hide_border=true&background=00000000&ring=E23636&fire=00F0FF&currStreakLabel=E23636" height="165" alt="Streak Stats" />
+  <a href="https://github.com/evannixon">
+    <img src="https://streak-stats.demolab.com/?user=evannixon&theme=tokyonight&hide_border=true&background=00000000&ring=E23636&fire=00F0FF&currStreakLabel=E23636&sideNums=E6EDF3&sideLabels=E6EDF3&dates=E6EDF3" alt="Streak Stats" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=evannixon&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=E23636&text_color=E6EDF3" alt="Top Languages" />
+  <img src="https://img.shields.io/github/followers/evannixon?style=flat-square&logo=github&color=E23636&labelColor=181717" alt="Followers" />
+  <img src="https://img.shields.io/badge/Public_Repos-7-00F0FF?style=flat-square&logo=git&labelColor=181717" alt="Repositories" />
+  <img src="https://komarev.com/ghpvc/?username=evannixon&color=E23636&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
 </p>
 
 ---
