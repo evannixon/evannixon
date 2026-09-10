@@ -1,0 +1,33 @@
+name: Daily GitHub Streak Keeper 🟢
+
+on:
+  schedule:
+    # Runs twice a day (00:00 UTC and 12:00 UTC) to guarantee consistent streak across all timezones
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions UI anytime!
+
+permissions:
+  contents: write
+
+jobs:
+  keep-streak:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update Heartbeat File
+        run: |
+          DATE_STR=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          echo "Last active beat: $DATE_STR" > heartbeat.txt
+          echo "Maintaining active developer streak automatically 🚀" >> heartbeat.txt
+          echo "Streak automated by GitHub Actions" >> heartbeat.txt
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "evannixon"
+          git config --global user.email "evannixonpratama1@gmail.com"
+          git add heartbeat.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(streak): daily activity heartbeat [skip ci]" && git push origin main)
