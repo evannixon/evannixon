@@ -9,7 +9,7 @@
 <p align="center">
   <a href="mailto:evannixonpratama1@gmail.com"><img src="https://img.shields.io/badge/Email-evannixonpratama1%40gmail.com-161b22?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://github.com/evannixon"><img src="https://img.shields.io/badge/GitHub-evannixon-161b22?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="https://linkedin.com/evannixonpratama"><img src="https://img.shields.io/badge/LinkedIn-Connect-161b22?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://linkedin.com/in/evannixonpratama/"><img src="https://img.shields.io/badge/LinkedIn-Connect-161b22?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
 ---
