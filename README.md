@@ -107,7 +107,7 @@ Motto: With great code comes great responsibility 🕷️
 
 ---
 
-### 🕷️ Your Friendly Neighborhood Developer
+### 🕹️ Spider-Man: Rooftop Web Runner (Arcade Mini-Game)
 
 <p align="center">
   <img src="assets/spiderman_swing.gif" alt="Spider-Man Swinging" width="400" style="border-radius: 12px;" />
@@ -116,6 +116,36 @@ Motto: With great code comes great responsibility 🕷️
 <p align="center">
   <i>"Swinging through complex codebases, untangling data webs, and building robust systems one commit at a time."</i>
 </p>
+
+<p align="center">
+  <a href="https://evannixon.github.io/evannixon/">
+    <img src="https://img.shields.io/badge/🎮%20PLAY%20MINI--GAME-Click%20To%20Play%20In%20Browser-e11d48?style=for-the-badge&logoColor=white" alt="Play Mini-Game" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>🕹️ <b>Controls:</b> Hold <b>SPACE</b> or <b>Click</b> to shoot web &amp; swing. Release to launch forward!</sub>
+</p>
+
+<details>
+<summary><b>🕷️ [Click for Terminal Mission Easter Egg]</b></summary>
+<br>
+
+```text
+[MISSION BRIEFING]
+Target: Infiltrate System & Extract Stolen Data Pipeline Keys
+Threat: Low  |  Web-Fluid: 100%  |  Status: Crouched on Rooftop
+
+[1] 🕸️ Shoot web-tether to the security camera?
+    ↳ SUCCESS: Camera blinded with web fluid! Security alarm remains 0%.
+[2] 💻 Connect decryptor into the ventilation terminal?
+    ↳ BINGO: Data pipeline verified! 256-bit AES encryption bypassed.
+[3] 🚀 Leap across the skyline back into the shadows?
+    ↳ MISSION COMPLETE: Clean getaway into the quiet nocturnal city.
+```
+
+> *"Whatever comes our way, it's what we choose to build that defines who we are."*
+</details>
 
 ---
 

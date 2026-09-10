@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider-Man: Rooftop Web Runner | Evan Nixon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none;
+    }
+    body {
+      background: #0d1117;
+      color: #f0f6fc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    #game-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      height: 480px;
+      border: 2px solid #e11d48;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(225, 29, 72, 0.3);
+      overflow: hidden;
+      background: #060913;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    #hud {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      pointer-events: none;
+    }
+    .hud-stat {
+      background: rgba(13, 17, 23, 0.85);
+      border: 1px solid #161b22;
+      padding: 6px 14px;
+      border-radius: 6px;
+    }
+    .accent {
+      color: #e11d48;
+    }
+    #overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(6, 9, 19, 0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    h1 span {
+      color: #e11d48;
+    }
+    p {
+      color: #8b949e;
+      font-size: 14px;
+      margin-bottom: 20px;
+      max-width: 450px;
+      line-height: 1.5;
+    }
+    .btn {
+      background: #e11d48;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.15s, background 0.15s;
+    }
+    .btn:hover {
+      background: #f43f5e;
+      transform: scale(1.05);
+    }
+    #instructions {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #6e7681;
+    }
+    .footer {
+      margin-top: 16px;
+      font-size: 13px;
+      color: #8b949e;
+    }
+    .footer a {
+      color: #e11d48;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="game-container">
+    <canvas id="canvas" width="800" height="480"></canvas>
+    
+    <div id="hud">
+      <div class="hud-stat">SCORE: <span id="score-val" class="accent">0</span></div>
+      <div class="hud-stat">BEST: <span id="best-val">0</span></div>
+    </div>
+
+    <div id="overlay">
+      <h1>SPIDER-MAN: <span>WEB RUNNER</span></h1>
+      <p>Swing from the rooftops, collect energy nodes, and don't fall into the city streets below!</p>
+      <button class="btn" id="start-btn">START MISSION</button>
+      <div id="instructions">Press <b>SPACE</b> or <b>CLICK / TAP</b> to shoot web & swing. Release to launch!</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Crafted by <a href="https://github.com/evannixon">Evan Nixon</a> &bull; Portfolio Mini-Game
+  </div>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const scoreVal = document.getElementById('score-val');
+    const bestVal = document.getElementById('best-val');
+    const overlay = document.getElementById('overlay');
+    const startBtn = document.getElementById('start-btn');
+
+    // Audio synthesizer for retro sounds
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    let audioCtx = null;
+
+    function playSound(freq, type, duration) {
+      if (!audioCtx) audioCtx = new AudioCtx();
+      try {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    // Game state
+    let state = 'menu';
+    let score = 0;
+    let highScore = parseInt(localStorage.getItem('spidey_highscore') || '0');
+    bestVal.innerText = highScore;
+
+    // Spidey Physics
+    const spidey = {
+      x: 180,
+      y: 200,
+      vx: 4,
+      vy: 0,
+      radius: 14,
+      isSwinging: false,
+      anchorX: 0,
+      anchorY: 0,
+      ropeLength: 0,
+      angle: 0,
+      angularVelocity: 0
+    };
+
+    // Camera & World
+    let cameraX = 0;
+    const gravity = 0.35;
+    let orbs = [];
+    let buildings = [];
+
+    function initGame() {
+      score = 0;
+      scoreVal.innerText = score;
+      spidey.x = 200;
+      spidey.y = 200;
+      spidey.vx = 4.5;
+      spidey.vy = 0;
+      spidey.isSwinging = false;
+      cameraX = 0;
+
+      // Generate Buildings
+      buildings = [];
+      let curX = 0;
+      for (let i = 0; i < 30; i++) {
+        let width = 120 + Math.random() * 140;
+        let height = 150 + Math.random() * 180;
+        buildings.push({
+          x: curX,
+          width: width,
+          height: height,
+          windows: generateWindows(width, height)
+        });
+        curX += width + 40 + Math.random() * 70;
+      }
+
+      // Generate Energy Orbs
+      orbs = [];
+      for (let i = 0; i < 40; i++) {
+        orbs.push({
+          x: 400 + i * 160 + Math.random() * 50,
+          y: 100 + Math.random() * 180,
+          radius: 8,
+          collected: false
+        });
+      }
+    }
+
+    function generateWindows(w, h) {
+      const wins = [];
+      for (let x = 15; x < w - 15; x += 22) {
+        for (let y = 15; y < h - 15; y += 28) {
+          if (Math.random() > 0.4) {
+            wins.push({ x, y, lit: Math.random() > 0.3 });
+          }
+        }
+      }
+      return wins;
+    }
+
+    function shootWeb() {
+      if (state !== 'playing') return;
+      if (!spidey.isSwinging) {
+        // Anchor above and slightly ahead of Spidey
+        spidey.anchorX = spidey.x + 80;
+        spidey.anchorY = 20;
+        const dx = spidey.x - spidey.anchorX;
+        const dy = spidey.y - spidey.anchorY;
+        spidey.ropeLength = Math.sqrt(dx * dx + dy * dy);
+        spidey.angle = Math.atan2(dy, dx);
+        spidey.angularVelocity = spidey.vx / spidey.ropeLength;
+        spidey.isSwinging = true;
+        playSound(440, 'sine', 0.12);
+      }
+    }
+
+    function releaseWeb() {
+      if (state !== 'playing') return;
+      if (spidey.isSwinging) {
+        spidey.isSwinging = false;
+        spidey.vx = -spidey.ropeLength * spidey.angularVelocity * Math.sin(spidey.angle) + 2.5;
+        spidey.vy = spidey.ropeLength * spidey.angularVelocity * Math.cos(spidey.angle);
+        if (spidey.vx < 3.5) spidey.vx = 4;
+        playSound(580, 'triangle', 0.1);
+      }
+    }
+
+    function update() {
+      if (state !== 'playing') return;
+
+      if (spidey.isSwinging) {
+        const angularAcceleration = (-gravity / spidey.ropeLength) * Math.cos(spidey.angle);
+        spidey.angularVelocity += angularAcceleration;
+        spidey.angularVelocity *= 0.995; // damping
+        spidey.angle += spidey.angularVelocity;
+
+        spidey.x = spidey.anchorX + spidey.ropeLength * Math.cos(spidey.angle);
+        spidey.y = spidey.anchorY + spidey.ropeLength * Math.sin(spidey.angle);
+
+        // Slow progress forward while swinging
+        spidey.anchorX += 2.8;
+      } else {
+        spidey.vy += gravity;
+        spidey.x += spidey.vx;
+        spidey.y += spidey.vy;
+      }
+
+      cameraX = spidey.x - 200;
+
+      // Extend world dynamically
+      const lastBuilding = buildings[buildings.length - 1];
+      if (lastBuilding.x - cameraX < 1200) {
+        let width = 120 + Math.random() * 140;
+        let height = 150 + Math.random() * 180;
+        buildings.push({
+          x: lastBuilding.x + lastBuilding.width + 40 + Math.random() * 70,
+          width: width,
+          height: height,
+          windows: generateWindows(width, height)
+        });
+        orbs.push({
+          x: lastBuilding.x + 150,
+          y: 100 + Math.random() * 180,
+          radius: 8,
+          collected: false
+        });
+      }
+
+      // Check Orbs
+      orbs.forEach(orb => {
+        if (!orb.collected) {
+          const dx = spidey.x - orb.x;
+          const dy = spidey.y - orb.y;
+          if (Math.sqrt(dx * dx + dy * dy) < spidey.radius + orb.radius) {
+            orb.collected = true;
+            score += 100;
+            scoreVal.innerText = score;
+            playSound(880, 'square', 0.15);
+          }
+        }
+      });
+
+      // Score by distance
+      score += 0.2;
+      scoreVal.innerText = Math.floor(score);
+
+      // Game Over: Falling into the street
+      if (spidey.y > 480) {
+        gameOver();
+      }
+    }
+
+    function gameOver() {
+      state = 'gameover';
+      playSound(160, 'sawtooth', 0.4);
+      if (Math.floor(score) > highScore) {
+        highScore = Math.floor(score);
+        localStorage.setItem('spidey_highscore', highScore);
+        bestVal.innerText = highScore;
+      }
+      overlay.style.display = 'flex';
+      overlay.querySelector('h1').innerHTML = 'MISSION <span>FAILED</span>';
+      overlay.querySelector('p').innerText = `You scored ${Math.floor(score)} points! Ready to swing back into action?`;
+      startBtn.innerText = 'RETRY MISSION';
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Background gradient sky
+      const skyGrad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      skyGrad.addColorStop(0, '#060913');
+      skyGrad.addColorStop(1, '#111827');
+      ctx.fillStyle = skyGrad;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Distant Parallax Skyline
+      ctx.fillStyle = '#0b0f19';
+      for (let i = 0; i < 25; i++) {
+        let x = (i * 90) - (cameraX * 0.2 % 90);
+        let h = 80 + ((i * 37) % 110);
+        ctx.fillRect(x, canvas.height - h, 75, h);
+      }
+
+      // Foreground Buildings
+      buildings.forEach(b => {
+        const renderX = b.x - cameraX;
+        if (renderX + b.width > -50 && renderX < canvas.width + 50) {
+          ctx.fillStyle = '#161b22';
+          ctx.fillRect(renderX, canvas.height - b.height, b.width, b.height);
+          ctx.strokeStyle = '#e11d48';
+          ctx.lineWidth = 1.5;
+          ctx.strokeRect(renderX, canvas.height - b.height, b.width, b.height);
+
+          // Glowing windows
+          b.windows.forEach(w => {
+            ctx.fillStyle = w.lit ? 'rgba(254, 240, 138, 0.45)' : 'rgba(255, 255, 255, 0.05)';
+            ctx.fillRect(renderX + w.x, canvas.height - b.height + w.y, 8, 12);
+          });
+        }
+      });
+
+      // Energy Orbs
+      orbs.forEach(orb => {
+        if (!orb.collected) {
+          const renderX = orb.x - cameraX;
+          if (renderX > -20 && renderX < canvas.width + 20) {
+            ctx.beginPath();
+            ctx.arc(renderX, orb.y, orb.radius, 0, Math.PI * 2);
+            ctx.fillStyle = '#e11d48';
+            ctx.shadowColor = '#f43f5e';
+            ctx.shadowBlur = 12;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          }
+        }
+      });
+
+      // Web Strand
+      if (spidey.isSwinging) {
+        ctx.beginPath();
+        ctx.moveTo(spidey.anchorX - cameraX, spidey.anchorY);
+        ctx.lineTo(spidey.x - cameraX, spidey.y);
+        ctx.strokeStyle = 'rgba(240, 246, 252, 0.85)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+      }
+
+      // Draw Spider-Man
+      const sx = spidey.x - cameraX;
+      const sy = spidey.y;
+
+      // Shadow Glow
+      ctx.beginPath();
+      ctx.arc(sx, sy, spidey.radius, 0, Math.PI * 2);
+      ctx.fillStyle = '#e11d48';
+      ctx.shadowColor = '#e11d48';
+      ctx.shadowBlur = 10;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+
+      // Suit Details (Mask Eyes)
+      ctx.beginPath();
+      ctx.ellipse(sx - 4, sy - 2, 4, 2, Math.PI / 6, 0, Math.PI * 2);
+      ctx.ellipse(sx + 4, sy - 2, 4, 2, -Math.PI / 6, 0, Math.PI * 2);
+      ctx.fillStyle = '#ffffff';
+      ctx.fill();
+
+      // Spider Emblem Mark
+      ctx.fillStyle = '#060913';
+      ctx.fillRect(sx - 2, sy + 3, 4, 5);
+
+      requestAnimationFrame(loop);
+    }
+
+    function loop() {
+      update();
+      draw();
+    }
+
+    // Controls
+    startBtn.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      initGame();
+      state = 'playing';
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (state === 'playing') shootWeb();
+        else if (state === 'gameover' || state === 'menu') {
+          overlay.style.display = 'none';
+          initGame();
+          state = 'playing';
+        }
+      }
+    });
+
+    window.addEventListener('keyup', (e) => {
+      if (e.code === 'Space') releaseWeb();
+    });
+
+    canvas.addEventListener('mousedown', shootWeb);
+    window.addEventListener('mouseup', releaseWeb);
+    canvas.addEventListener('touchstart', (e) => { e.preventDefault(); shootWeb(); });
+    window.addEventListener('touchend', releaseWeb);
+
+    // Initial render
+    initGame();
+    draw();
+  </script>
+</body>
+</html>
