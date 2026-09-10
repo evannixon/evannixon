@@ -1,157 +1,136 @@
-<div align="center">
+<p align="center">
+  <img src="assets/banner.jpg" alt="Evan Nixon Banner" width="100%" style="border-radius: 10px;" />
+</p>
 
-  <!-- Typing SVG Header -->
-  <a href="https://github.com/evannixon">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00F0FF&center=true&vCenter=true&random=false&width=650&height=70&lines=Hi+there%2C+I'm+Evan+👋;Fullstack+Developer+%26+Problem+Solver;Python+%7C+Data+Engineering+%26+Automation;Crafting+Modern+Web+%26+Smart+Solutions" alt="Typing SVG" />
-  </a>
+<h1 align="center">Evan Nixon</h1>
 
-  <p align="center">
-    <strong>Passionate Software Developer</strong> exploring the intersection of <strong>Fullstack Web Development</strong> and <strong>Data Engineering</strong>.
-  </p>
+<p align="center">
+  <b>Software Engineer</b> &bull; <b>Data Engineering & Automation</b> &bull; <b>Fullstack Web</b>
+</p>
 
-  <p align="center">
-    <a href="mailto:evannixonpratama1@gmail.com">
-      <img src="https://img.shields.io/badge/Email-evannixonpratama1%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-    </a>
-    <a href="https://github.com/evannixon">
-      <img src="https://img.shields.io/badge/GitHub-evannixon-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://linkedin.com/">
-      <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-  </p>
-
-  <!-- Visitor & Streak Badge -->
-  <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=evannixon&color=00f0ff&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
-    <img src="https://img.shields.io/badge/Daily_Streak-Active_24%2F7-00f0ff?style=flat-square&logo=githubactions&logoColor=white" alt="Streak Bot" />
-  </p>
-
-</div>
+<p align="center">
+  <a href="mailto:evannixonpratama1@gmail.com"><img src="https://img.shields.io/badge/Email-evannixonpratama1%40gmail.com-181717?style=flat-square&logo=gmail&logoColor=EA4335" alt="Email"></a>
+  <a href="https://github.com/evannixon"><img src="https://img.shields.io/badge/GitHub-evannixon-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-181717?style=flat-square&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"></a>
+  <img src="https://img.shields.io/badge/Status-Building%20%26%20Automating-00F0FF?style=flat-square" alt="Status">
+</p>
 
 ---
 
-### ⚡ Quick About Me
+### 🌐 Profile Overview
 
-```yaml
-name: Evan
-role: Fullstack Developer & Data Specialist
-location: Indonesia 🇮🇩
-passions:
-  - Web Application Architecture
-  - Data Pipelines, Web Scraping & Automation
-  - Clean Code & Performance Optimization
-current_focus: Building scalable web solutions & automated data workflows
-motto: "Turn coffee and curiosity into robust, impactful software."
+I build practical software solutions with an emphasis on **backend reliability**, **automated data harvesting**, and **clean user interfaces**. Currently focused on engineering automated pipelines and modern web platforms that streamline workflows and solve concrete problems.
+
+```bash
+evan@terminal:~$ neofetch --engineer
+OS: Arch / Linux / Windows
+Role: Software Developer & Automation Specialist
+Stack: Python, PHP, JavaScript, SQL
+Current Mission: Scaling data pipelines & reactive applications
+Streak Bot: Online 24/7 (via GitHub Actions Cron)
 ```
 
-- 🔭 Currently building: **Data pipeline tools & modern reactive web applications**
-- 🌱 Constantly learning: **Cloud infrastructure, Microservices & Advanced Data Processing**
-- 💬 Ask me about: **PHP, JavaScript, Python, Scraping, REST APIs, & Database Design**
-- ⚡ Fun fact: *Automating a 2-minute task with a 5-hour script is always worth it.*
+- ⚙️ **Architecture & Backend**: Crafting clean APIs and database structures with PHP (Laravel) and Python.
+- 🔄 **Data & Pipelines**: Automated scraping, data cleaning, and multi-format exports (Pandas, OpenPyXL, BeautifulSoup).
+- 🎨 **Modern Frontend**: Building responsive, snappy client interfaces with JavaScript & TailwindCSS.
 
 ---
 
-### 🛠️ Tech Stack & Arsenal
+### 🧰 Technical Arsenal
 
-<div align="center">
-
-#### 🌐 Frontend Development
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,php,laravel,js,nodejs,tailwind,bootstrap,mysql,postgres,sqlite,git,github,postman,vscode&perline=7&theme=dark" alt="Technical Arsenal" />
+  </a>
 </p>
 
-#### ⚙️ Backend & Frameworks
-<p>
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-</p>
+<details>
+<summary><b>📂 Detailed Tech & Tools Breakdown</b></summary>
+<br>
 
-#### 📊 Data Engineering & Automation
-<p>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-  <img src="https://img.shields.io/badge/Web_Scraping-00C7B7?style=for-the-badge&logo=databricks&logoColor=white" alt="Scraping" />
-  <img src="https://img.shields.io/badge/Automation-FF6F00?style=for-the-badge&logo=zapier&logoColor=white" alt="Automation" />
-  <img src="https://img.shields.io/badge/OpenPyXL_/_Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel" />
-</p>
+| Domain | Technologies |
+| :--- | :--- |
+| **Languages** | Python 3, PHP 8+, JavaScript (ES6+), SQL |
+| **Frameworks & Web** | Laravel, Node.js, Express, TailwindCSS, Bootstrap |
+| **Data & Automation** | Pandas, BeautifulSoup4, Requests, OpenPyXL, GitHub Actions CI/CD |
+| **Storage & Databases** | MySQL, PostgreSQL, SQLite, Redis |
+| **Dev Tools & OS** | Git, GitHub, VS Code, Postman, Terminal / Bash, Windows |
 
-#### 🗄️ Database & Storage
-<p>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-</p>
-
-#### 🧰 Tools & Workflow
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-</p>
-
-</div>
+</details>
 
 ---
 
-### 🚀 Highlighted Projects
+### 🚀 Selected Work & Repositories
 
-| Project | Description | Tech Stack | Status |
-| :--- | :--- | :--- | :---: |
-| 🔄 **[IntegrateData](https://github.com/evannixon/IntegrateData)** | Automated web scraper & data integration pipeline producing multi-format data (Excel, CSV, JSON). | `Python` `Pandas` `Scraping` | Active 🟢 |
-| 🌐 **[nexa-landing](https://github.com/evannixon/nexa-landing)** | High-performance, responsive modern landing page built with clean interactive UI. | `JavaScript` `HTML5` `CSS3` | Completed 🚀 |
-| 🔍 **[lostfound](https://github.com/evannixon/lostfound)** | Web application for managing and recovering lost and found items with role management. | `PHP` `MySQL` `Fullstack` | Active 🟢 |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔄 <a href="https://github.com/evannixon/IntegrateData">IntegrateData</a></h3>
+      <p>Automated university catalog extraction engine and multi-stage data processing pipeline. Handles raw web data ingestion, normalization, and structured exports into Excel, CSV, and JSON formats.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
+        <img src="https://img.shields.io/badge/Automation-FF6F00?style=flat-square" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔍 <a href="https://github.com/evannixon/lostfound">Lost & Found System</a></h3>
+      <p>Fullstack web application designed for campus/community lost property management. Features user authentication, report lifecycles, and verification flows.</p>
+      <p>
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" />
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+        <img src="https://img.shields.io/badge/Fullstack-00F0FF?style=flat-square" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌐 <a href="https://github.com/evannixon/nexa-landing">Nexa Landing</a></h3>
+      <p>High-performance modern landing page featuring refined typography, smooth interactive UI components, and mobile-first responsive architecture.</p>
+      <p>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+        <img src="https://img.shields.io/badge/UI%2FUX-7928CA?style=flat-square" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🤖 <a href="https://github.com/evannixon/evannixon">Daily Streak Keeper</a></h3>
+      <p>Self-contained GitHub Actions cron engine that dispatches automated commit heartbeats to maintain a permanent 365-day green contribution streak on GitHub.</p>
+      <p>
+        <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
+        <img src="https://img.shields.io/badge/Cron-00F0FF?style=flat-square" />
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ### 🐍 Contribution Activity Snake
 
-<div align="center">
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/evannixon/evannixon/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/evannixon/evannixon/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/evannixon/evannixon/output/github-contribution-grid-snake.svg" width="100%">
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/evannixon/evannixon/output/github-contribution-grid-snake.svg" width="100%">
   </picture>
-</div>
+</p>
 
 ---
 
-### 📊 GitHub Statistics & Streak
+### 📊 GitHub Activity & Metrics
 
-<div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=evannixon&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F0FF&icon_color=FF007F&text_color=E6EDF3" alt="Evan's GitHub Stats" height="175" />
-      </td>
-      <td>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=evannixon&theme=tokyonight&hide_border=true&background=0D1117&ring=00F0FF&fire=FF007F&currStreakLabel=00F0FF" alt="Evan's Streak Stats" height="175" />
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=evannixon&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F0FF&text_color=E6EDF3" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=evannixon&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00F0FF&icon_color=7928CA&text_color=E6EDF3" height="165" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=evannixon&theme=tokyonight&hide_border=true&background=00000000&ring=00F0FF&fire=7928CA&currStreakLabel=00F0FF" height="165" alt="Streak Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=evannixon&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00F0FF&text_color=E6EDF3" alt="Top Languages" />
+</p>
 
 ---
 
-### 📈 Activity Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=evannixon&theme=tokyo-night&bg_color=0D1117&color=00F0FF&line=FF007F&point=FFFFFF&area=true&hide_border=true" width="100%" alt="Activity Graph" />
-</div>
-
----
-
-<div align="center">
-  <sub>Designed with 💙 & Neon by <a href="https://github.com/evannixon">Evan</a>. Let's connect and build something awesome together!</sub>
-</div>
+<p align="center">
+  <sub>Crafted with modern engineering principles &bull; &copy; <b>Evan Nixon</b></sub>
+</p>
