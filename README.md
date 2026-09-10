@@ -9,10 +9,10 @@
 </p>
 
 <p align="center">
-  <a href="mailto:evannixonpratama1@gmail.com"><img src="https://img.shields.io/badge/Email-evannixonpratama1%40gmail.com-181717?style=flat-square&logo=gmail&logoColor=EA4335" alt="Email"></a>
-  <a href="https://github.com/evannixon"><img src="https://img.shields.io/badge/GitHub-evannixon-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-181717?style=flat-square&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"></a>
-  <img src="https://img.shields.io/badge/Vibe-Chill%20%26%20Focused-E23636?style=flat-square" alt="Vibe">
+  <a href="mailto:evannixonpratama1@gmail.com"><img src="https://img.shields.io/badge/Email-evannixonpratama1%40gmail.com-161b22?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://github.com/evannixon"><img src="https://img.shields.io/badge/GitHub-evannixon-161b22?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-161b22?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <img src="https://img.shields.io/badge/Focus-Building%20%26%20Automating-e11d48?style=flat-square" alt="Focus">
 </p>
 
 ---
@@ -68,18 +68,18 @@ Motto: With great code comes great responsibility 🕷️
       <h3>🔄 <a href="https://github.com/evannixon/IntegrateData">IntegrateData</a></h3>
       <p>Automated university catalog extraction engine and multi-stage data processing pipeline. Handles raw web data ingestion, normalization, and structured exports into Excel, CSV, and JSON formats.</p>
       <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
-        <img src="https://img.shields.io/badge/Automation-E23636?style=flat-square" />
+        <img src="https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Pandas-161b22?style=flat-square&logo=pandas&logoColor=white" />
+        <img src="https://img.shields.io/badge/Pipeline-e11d48?style=flat-square" />
       </p>
     </td>
     <td width="50%" valign="top">
       <h3>🔍 <a href="https://github.com/evannixon/lostfound">Lost & Found System</a></h3>
       <p>Fullstack web application designed for campus/community lost property management. Features user authentication, report lifecycles, and verification flows.</p>
       <p>
-        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" />
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-        <img src="https://img.shields.io/badge/Fullstack-00F0FF?style=flat-square" />
+        <img src="https://img.shields.io/badge/PHP-161b22?style=flat-square&logo=php&logoColor=white" />
+        <img src="https://img.shields.io/badge/MySQL-161b22?style=flat-square&logo=mysql&logoColor=white" />
+        <img src="https://img.shields.io/badge/Fullstack-e11d48?style=flat-square" />
       </p>
     </td>
   </tr>
@@ -88,18 +88,18 @@ Motto: With great code comes great responsibility 🕷️
       <h3>🌐 <a href="https://github.com/evannixon/nexa-landing">Nexa Landing</a></h3>
       <p>High-performance modern landing page featuring refined typography, smooth interactive UI components, and mobile-first responsive architecture.</p>
       <p>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-        <img src="https://img.shields.io/badge/UI%2FUX-7928CA?style=flat-square" />
+        <img src="https://img.shields.io/badge/JavaScript-161b22?style=flat-square&logo=javascript&logoColor=white" />
+        <img src="https://img.shields.io/badge/TailwindCSS-161b22?style=flat-square&logo=tailwindcss&logoColor=white" />
+        <img src="https://img.shields.io/badge/Frontend-e11d48?style=flat-square" />
       </p>
     </td>
     <td width="50%" valign="top">
       <h3>🕷️ <a href="https://github.com/evannixon">Web Automation & Scripting</a></h3>
       <p>Custom extraction scripts, workflow automations, and scheduled tasks tailored for continuous data processing and API integration.</p>
       <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Scraping-00C7B7?style=flat-square" />
-        <img src="https://img.shields.io/badge/Workflow-E23636?style=flat-square" />
+        <img src="https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Requests-161b22?style=flat-square&logoColor=white" />
+        <img src="https://img.shields.io/badge/Automation-e11d48?style=flat-square" />
       </p>
     </td>
   </tr>
@@ -110,7 +110,7 @@ Motto: With great code comes great responsibility 🕷️
 ### 🕷️ Your Friendly Neighborhood Developer
 
 <p align="center">
-  <img src="assets/spiderman_swing.gif" alt="Spider-Man Swinging" width="420" style="border-radius: 12px;" />
+  <img src="assets/spiderman_swing.gif" alt="Spider-Man Swinging" width="400" style="border-radius: 12px;" />
 </p>
 
 <p align="center">
@@ -123,14 +123,14 @@ Motto: With great code comes great responsibility 🕷️
 
 <p align="center">
   <a href="https://github.com/evannixon">
-    <img src="https://streak-stats.demolab.com/?user=evannixon&theme=tokyonight&hide_border=true&background=00000000&ring=E23636&fire=00F0FF&currStreakLabel=E23636&sideNums=E6EDF3&sideLabels=E6EDF3&dates=E6EDF3" alt="Streak Stats" />
+    <img src="https://streak-stats.demolab.com/?user=evannixon&theme=tokyonight&hide_border=true&background=00000000&ring=e11d48&fire=e11d48&currStreakLabel=e11d48&sideNums=f0f6fc&sideLabels=8b949e&dates=6e7681" alt="Streak Stats" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/followers/evannixon?style=flat-square&logo=github&color=E23636&labelColor=181717" alt="Followers" />
-  <img src="https://img.shields.io/badge/Public_Repos-7-00F0FF?style=flat-square&logo=git&labelColor=181717" alt="Repositories" />
-  <img src="https://komarev.com/ghpvc/?username=evannixon&color=E23636&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/evannixon?style=flat-square&logo=github&logoColor=white&color=e11d48&labelColor=161b22" alt="Followers" />
+  <img src="https://img.shields.io/badge/Public_Repos-7-e11d48?style=flat-square&logo=git&logoColor=white&labelColor=161b22" alt="Repositories" />
+  <img src="https://komarev.com/ghpvc/?username=evannixon&color=e11d48&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
 </p>
 
 ---
