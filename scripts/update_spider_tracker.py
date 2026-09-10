@@ -1,8 +1,6 @@
 import os
 import json
 import urllib.request
-import urllib.error
-import math
 from datetime import datetime
 
 USERNAME = os.environ.get("GITHUB_USER", "evannixon")
@@ -63,16 +61,13 @@ def fetch_contributions_graphql(username, token):
         return None
 
 def fetch_contributions_public(username):
-    # Fallback to public contributions endpoint
     url = f"https://github-contributions-api.jogruber.de/v4/{username}?y=last"
     req = urllib.request.Request(url, headers={"User-Agent": "Spider-Tracker-Bot"})
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-            # Transform to match calendar weeks
             total = data.get("total", {}).get("lastYear", 0)
             contributions = data.get("contributions", [])
-            # group by 7 days
             weeks = []
             curr_week = []
             for item in contributions:
@@ -113,7 +108,6 @@ def generate_svg(calendar_data, output_path):
         total_contributions = calendar_data.get("totalContributions", 0)
         weeks = calendar_data.get("weeks", [])
     
-    # Ensure 52 weeks
     if len(weeks) > 52:
         weeks = weeks[-52:]
     while len(weeks) < 52:
@@ -134,13 +128,11 @@ def generate_svg(calendar_data, output_path):
             if count > 0:
                 active_points.append((x + BOX_SIZE // 2, y + BOX_SIZE // 2))
 
-    # Calculate spider crawl waypoints from real active contribution nodes
+    # Spider crawl waypoints
     if len(active_points) >= 6:
-        # Pick 8 distributed nodes along the timeline
         step = max(1, len(active_points) // 8)
         selected_waypoints = [active_points[i] for i in range(0, len(active_points), step)][:8]
     else:
-        # Fallback waypoints across the grid
         selected_waypoints = [
             (START_X + 5 * 15, START_Y + 1 * 15),
             (START_X + 15 * 15, START_Y + 4 * 15),
@@ -154,7 +146,8 @@ def generate_svg(calendar_data, output_path):
     spider_path_d = f"M {selected_waypoints[0][0]},{selected_waypoints[0][1]} " + " ".join([f"L {x},{y}" for x, y in selected_waypoints[1:]]) + " Z"
     grid_svg = "\n    ".join(grid_rects)
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="100%" style="background: transparent;">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="100%" style="background: transparent; cursor: pointer;">
+  <a href="https://github.com/evannixon?tab=overview" target="_blank" style="text-decoration: none;">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -228,10 +221,16 @@ def generate_svg(calendar_data, output_path):
         stroke-dashoffset: -100;
       }}
     }}
+    .hover-border {{
+      transition: stroke 0.3s ease;
+    }}
+    svg:hover .hover-border {{
+      stroke: #e11d48;
+    }}
   </style>
 
   <!-- Container Box -->
-  <rect x="2" y="2" width="{WIDTH - 4}" height="{HEIGHT - 4}" rx="10" fill="url(#bgGrad)" stroke="#272f3d" stroke-width="1.5" />
+  <rect x="2" y="2" width="{WIDTH - 4}" height="{HEIGHT - 4}" rx="10" fill="url(#bgGrad)" stroke="#272f3d" stroke-width="1.5" class="hover-border" />
   
   <!-- Corner Accents (Spidey HUD Styling) -->
   <path d="M 2 20 L 2 2 L 20 2" stroke="#e11d48" stroke-width="2.5" fill="none" />
@@ -246,8 +245,8 @@ def generate_svg(calendar_data, output_path):
     <line x1="8" y1="1" x2="8" y2="15" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
     <line x1="1" y1="8" x2="15" y2="8" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
 
-    <text x="24" y="9" fill="#f1f5f9" font-size="13" font-weight="700" letter-spacing="1.5" class="tech-font">SPIDER-TRACKER // LIVE REALTIME CONTRIBUTION MATRIX</text>
-    <text x="24" y="22" fill="#64748b" font-size="9" letter-spacing="1" class="tech-font">CONNECTED: GITHUB API • PROTOCOL MK.IV • USER: @{USERNAME.upper()}</text>
+    <text x="24" y="9" fill="#f1f5f9" font-size="13" font-weight="700" letter-spacing="1.5" class="tech-font">SPIDER-TRACKER // REALTIME RADAR PATROL MATRIX</text>
+    <text x="24" y="22" fill="#64748b" font-size="9" letter-spacing="1" class="tech-font">LIVE SYNC • CLICK ANYWHERE TO VIEW GITHUB ACTIVITY TIMELINE</text>
 
     <!-- Live Indicator Pill -->
     <rect x="{WIDTH - 240}" y="-2" width="150" height="24" rx="4" fill="#161b22" stroke="#334155" stroke-width="1" />
@@ -287,7 +286,7 @@ def generate_svg(calendar_data, output_path):
 
   <!-- Bottom Legend & Telemetry Bar -->
   <g transform="translate(40, {HEIGHT - 24})">
-    <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">VERIFIED PATROLS: <tspan fill="#e11d48" font-weight="700">{total_contributions}+ COMMITS</tspan> | RADAR STATUS: <tspan fill="#e11d48" font-weight="700">ONLINE</tspan></text>
+    <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">{total_contributions}+ LOGGED</tspan> | SYSTEM: <tspan fill="#e11d48" font-weight="700">ONLINE</tspan></text>
 
     <!-- Legend -->
     <g transform="translate({WIDTH - 230}, 0)">
@@ -301,6 +300,7 @@ def generate_svg(calendar_data, output_path):
       <text x="80" y="9" fill="#475569" font-size="8" class="tech-font">More</text>
     </g>
   </g>
+  </a>
 </svg>
 """
     with open(output_path, "w", encoding="utf-8") as f:

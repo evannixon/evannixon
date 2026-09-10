@@ -152,17 +152,29 @@ Threat: Low  |  Web-Fluid: 100%  |  Status: Crouched on Rooftop
 > *"Some days are hard, but someone has to keep the neighborhood running smoothly."*
 
 <p align="center">
-  <img src="assets/spider_tracker.svg" alt="Spider Patrol Contribution Matrix" width="100%" />
+  <a href="https://github.com/evannixon?tab=overview" target="_blank" rel="noopener noreferrer">
+    <img src="assets/spider_tracker.svg" alt="Spider Patrol Realtime Contribution Matrix" width="100%" />
+  </a>
+  <br>
+  <sub>👆 <b>Interactive Radar:</b> Klik radar matriks di atas untuk membuka timeline aktivitas &amp; log kontribusi real-time GitHub</sub>
 </p>
 
-| 🕷️ Suit Protocol | 📊 Patrol Metric | ⚡ Status |
-| :--- | :--- | :---: |
-| **Mask HUD** | `Daily City Watch & Commits` | Active 🟢 |
-| **Web-Fluid Supply** | `600+ Deployments Logged` | 100% 🕸️ |
-| **Neighborhood Patrol** | `Streak Frequency Maintained` | 24/7 🛡️ |
-| **Spider-Sense Radar** | `Bug Fixes & Pipeline Optimization` | Calibrated ⚡ |
-
-<br>
+<table align="center" width="100%">
+  <tr>
+    <td width="33%" align="center">
+      <b>🛰️ Live API Tracking</b><br>
+      <sub>Tersinkronisasi otomatis via GitHub Actions dari API kontribusi riil</sub>
+    </td>
+    <td width="33%" align="center">
+      <b>⚡ Real-Time Streak</b><br>
+      <sub>Aktivitas commit harian aktif hingga tanggal sekarang</sub>
+    </td>
+    <td width="33%" align="center">
+      <b>🎯 Dynamic Spider Patrol</b><br>
+      <sub>Spider-drone otomatis merayap mengikuti titik koordinat commit teraktif</sub>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <a href="https://github.com/evannixon">
