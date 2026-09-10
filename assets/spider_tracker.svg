@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 240" width="100%" height="100%" style="background: transparent; cursor: pointer;">
-  <a href="https://github.com/evannixon?tab=overview" target="_blank" style="text-decoration: none;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 860 240" width="100%" height="100%" style="background: transparent;">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -73,16 +72,18 @@
         stroke-dashoffset: -100;
       }
     }
-    .hover-border {
-      transition: stroke 0.3s ease;
+    .contrib-box {
+      transition: transform 0.2s ease, stroke 0.2s ease;
+      cursor: pointer;
     }
-    svg:hover .hover-border {
-      stroke: #e11d48;
+    .contrib-box:hover {
+      stroke: #ffffff;
+      stroke-width: 1.5px;
     }
   </style>
 
   <!-- Container Box -->
-  <rect x="2" y="2" width="856" height="236" rx="10" fill="url(#bgGrad)" stroke="#272f3d" stroke-width="1.5" class="hover-border" />
+  <rect x="2" y="2" width="856" height="236" rx="10" fill="url(#bgGrad)" stroke="#272f3d" stroke-width="1.5" />
   
   <!-- Corner Accents (Spidey HUD Styling) -->
   <path d="M 2 20 L 2 2 L 20 2" stroke="#e11d48" stroke-width="2.5" fill="none" />
@@ -92,386 +93,390 @@
 
   <!-- Top Header HUD -->
   <g transform="translate(40, 32)">
-    <circle cx="8" cy="8" r="7" fill="none" stroke="#e11d48" stroke-width="1.2" />
-    <circle cx="8" cy="8" r="3" fill="#e11d48" />
-    <line x1="8" y1="1" x2="8" y2="15" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
-    <line x1="1" y1="8" x2="15" y2="8" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
+    <a href="https://github.com/evannixon?tab=overview" target="_blank" style="text-decoration: none;">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="#e11d48" stroke-width="1.2" />
+      <circle cx="8" cy="8" r="3" fill="#e11d48" />
+      <line x1="8" y1="1" x2="8" y2="15" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
+      <line x1="1" y1="8" x2="15" y2="8" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
 
-    <text x="24" y="9" fill="#f1f5f9" font-size="13" font-weight="700" letter-spacing="1.5" class="tech-font">SPIDER-TRACKER // REALTIME RADAR PATROL MATRIX</text>
-    <text x="24" y="22" fill="#64748b" font-size="9" letter-spacing="1" class="tech-font">LIVE SYNC • CLICK ANYWHERE TO VIEW GITHUB ACTIVITY TIMELINE</text>
+      <text x="24" y="9" fill="#f1f5f9" font-size="13" font-weight="700" letter-spacing="1.5" class="tech-font">SPIDER-TRACKER // REALTIME RADAR PATROL MATRIX</text>
+      <text x="24" y="22" fill="#64748b" font-size="9" letter-spacing="1" class="tech-font">CLICK ANY NODE TO FILTER THAT DAY'S COMMITS ON GITHUB</text>
+    </a>
 
     <!-- Live Indicator Pill -->
-    <rect x="620" y="-2" width="150" height="24" rx="4" fill="#161b22" stroke="#334155" stroke-width="1" />
-    <circle cx="632" cy="10" r="3.5" fill="#e11d48" class="live-dot" />
-    <text x="644" y="14" fill="#cbd5e1" font-size="10" font-weight="600" letter-spacing="0.8" class="tech-font">API: SYNCED LIVE</text>
+    <a href="https://github.com/evannixon?tab=repositories" target="_blank">
+      <rect x="620" y="-2" width="150" height="24" rx="4" fill="#161b22" stroke="#334155" stroke-width="1" />
+      <circle cx="632" cy="10" r="3.5" fill="#e11d48" class="live-dot" />
+      <text x="644" y="14" fill="#cbd5e1" font-size="10" font-weight="600" letter-spacing="0.8" class="tech-font">API: SYNCED LIVE</text>
+    </a>
   </g>
 
-  <!-- Contribution Heatmap Grid -->
+  <!-- Contribution Heatmap Grid (Interactive clickable rects) -->
   <g>
-    <rect x="40" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="40" y="80" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="40" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="40" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="40" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="40" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="40" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="55" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="55" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="55" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="55" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="55" y="125" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="55" y="140" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="55" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="70" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="70" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="70" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="70" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="70" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="70" y="140" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="70" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="85" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="85" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="85" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="85" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="85" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="85" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="85" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="100" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="100" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="100" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="100" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="100" y="125" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="100" y="140" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="100" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="115" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="115" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="115" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="115" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="115" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="115" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="115" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="130" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="130" y="80" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="130" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="130" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="130" y="125" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="130" y="140" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="130" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="145" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="145" y="80" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="145" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="145" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="145" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="145" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="145" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="160" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="160" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="160" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="160" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="160" y="125" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="160" y="140" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="160" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="175" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="175" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="175" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="175" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="175" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="175" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="175" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="190" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="190" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="190" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="190" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="190" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="190" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="190" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="205" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="205" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="205" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="205" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="205" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="205" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="205" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="220" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="220" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="220" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="220" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="220" y="125" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="220" y="140" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="220" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="235" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="235" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="235" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="235" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="235" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="235" y="140" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="235" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="250" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="250" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="250" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="250" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="250" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="250" y="140" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="250" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="265" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="265" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="265" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="265" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="265" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="265" y="140" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="265" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="280" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="280" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="280" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="280" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="280" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="280" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="280" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="295" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="295" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="295" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="295" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="295" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="295" y="140" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="295" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="310" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="310" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="310" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="310" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="310" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="310" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="310" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="325" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="325" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="325" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="325" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="325" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="325" y="140" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="325" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="340" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="340" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="340" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="340" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="340" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="340" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="340" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="355" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="355" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="355" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="355" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="355" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="355" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="355" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="370" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="370" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="370" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="370" y="110" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="370" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="370" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="370" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="385" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="385" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="385" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="385" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="385" y="125" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="385" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="385" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="400" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="400" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="400" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="400" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="400" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="400" y="140" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="400" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="415" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="415" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="415" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="415" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="415" y="125" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="415" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="415" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="430" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="430" y="80" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="430" y="95" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="430" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="430" y="125" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="430" y="140" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="430" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="445" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="445" y="80" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="445" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="445" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="445" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="445" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="445" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="460" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="460" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="460" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="460" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="460" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="460" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="460" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="475" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="475" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="475" y="95" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="475" y="110" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="475" y="125" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="475" y="140" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="475" y="155" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="490" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="490" y="80" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="490" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="490" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="490" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="490" y="140" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="490" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="505" y="65" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="505" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="505" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="505" y="110" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="505" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="505" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="505" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="520" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="520" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="520" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="520" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="520" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="520" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="520" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="535" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="535" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="535" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="535" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="535" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="535" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="535" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="550" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="550" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="550" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="550" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="550" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="550" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="550" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="565" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="565" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="565" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="565" y="110" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="565" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="565" y="140" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="565" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="580" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="580" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="580" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="580" y="110" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="580" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="580" y="140" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="580" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="595" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="595" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="595" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="595" y="110" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="595" y="125" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="595" y="140" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="595" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="610" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="610" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="610" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="610" y="110" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="610" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="610" y="140" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="610" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="625" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="625" y="80" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="625" y="95" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="625" y="110" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="625" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="625" y="140" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="625" y="155" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="640" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="640" y="80" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="640" y="95" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="640" y="110" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="640" y="125" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="640" y="140" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="640" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="655" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="655" y="80" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="655" y="95" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="655" y="110" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="655" y="125" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="655" y="140" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="655" y="155" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="670" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="670" y="80" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="670" y="95" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="670" y="110" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="670" y="125" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="670" y="140" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="670" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="685" y="65" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="685" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="685" y="95" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="685" y="110" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="685" y="125" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="685" y="140" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="685" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="700" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="700" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="700" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="700" y="110" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="700" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="700" y="140" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="700" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="715" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="715" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="715" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="715" y="110" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="715" y="125" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="715" y="140" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="715" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="730" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="730" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="730" y="95" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="730" y="110" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="730" y="125" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="730" y="140" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="730" y="155" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="745" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="745" y="80" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="745" y="95" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="745" y="110" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="745" y="125" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="745" y="140" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="745" y="155" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="760" y="65" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="760" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="760" y="95" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="760" y="110" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="760" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="760" y="140" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="760" y="155" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="775" y="65" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="775" y="80" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="775" y="95" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="775" y="110" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="775" y="125" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="775" y="140" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="775" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="790" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="790" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="790" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="790" y="110" width="11" height="11" rx="2" fill="#e11d48" />
-    <rect x="790" y="125" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="790" y="140" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="790" y="155" width="11" height="11" rx="2" fill="#881337" />
-    <rect x="805" y="65" width="11" height="11" rx="2" fill="#4c0519" />
-    <rect x="805" y="80" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="805" y="95" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="805" y="110" width="11" height="11" rx="2" fill="#be123c" />
-    <rect x="805" y="125" width="11" height="11" rx="2" fill="#fb7185" />
-    <rect x="805" y="140" width="11" height="11" rx="2" fill="#161b22" />
-    <rect x="805" y="155" width="11" height="11" rx="2" fill="#161b22" />
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-14&amp;to=2025-09-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-14&amp;to=2025-09-14" target="_blank"><rect x="40" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-14: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-15&amp;to=2025-09-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-15&amp;to=2025-09-15" target="_blank"><rect x="40" y="80" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-15: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-16&amp;to=2025-09-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-16&amp;to=2025-09-16" target="_blank"><rect x="40" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-09-16: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-17&amp;to=2025-09-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-17&amp;to=2025-09-17" target="_blank"><rect x="40" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-17: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-18&amp;to=2025-09-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-18&amp;to=2025-09-18" target="_blank"><rect x="40" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-09-18: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-19&amp;to=2025-09-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-19&amp;to=2025-09-19" target="_blank"><rect x="40" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-09-19: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-20&amp;to=2025-09-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-20&amp;to=2025-09-20" target="_blank"><rect x="40" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-09-20: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-21&amp;to=2025-09-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-21&amp;to=2025-09-21" target="_blank"><rect x="55" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-21: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-22&amp;to=2025-09-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-22&amp;to=2025-09-22" target="_blank"><rect x="55" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-09-22: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-23&amp;to=2025-09-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-23&amp;to=2025-09-23" target="_blank"><rect x="55" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-09-23: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-24&amp;to=2025-09-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-24&amp;to=2025-09-24" target="_blank"><rect x="55" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-09-24: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-25&amp;to=2025-09-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-25&amp;to=2025-09-25" target="_blank"><rect x="55" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-25: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-26&amp;to=2025-09-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-26&amp;to=2025-09-26" target="_blank"><rect x="55" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-26: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-27&amp;to=2025-09-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-27&amp;to=2025-09-27" target="_blank"><rect x="55" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-27: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-28&amp;to=2025-09-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-28&amp;to=2025-09-28" target="_blank"><rect x="70" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-28: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-29&amp;to=2025-09-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-29&amp;to=2025-09-29" target="_blank"><rect x="70" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-09-29: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-09-30&amp;to=2025-09-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-09-30&amp;to=2025-09-30" target="_blank"><rect x="70" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-09-30: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-01&amp;to=2025-10-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-01&amp;to=2025-10-01" target="_blank"><rect x="70" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-01: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-02&amp;to=2025-10-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-02&amp;to=2025-10-02" target="_blank"><rect x="70" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-02: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-03&amp;to=2025-10-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-03&amp;to=2025-10-03" target="_blank"><rect x="70" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-03: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-04&amp;to=2025-10-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-04&amp;to=2025-10-04" target="_blank"><rect x="70" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-04: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-05&amp;to=2025-10-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-05&amp;to=2025-10-05" target="_blank"><rect x="85" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-05: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-06&amp;to=2025-10-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-06&amp;to=2025-10-06" target="_blank"><rect x="85" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-10-06: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-07&amp;to=2025-10-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-07&amp;to=2025-10-07" target="_blank"><rect x="85" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-07: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-08&amp;to=2025-10-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-08&amp;to=2025-10-08" target="_blank"><rect x="85" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-10-08: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-09&amp;to=2025-10-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-09&amp;to=2025-10-09" target="_blank"><rect x="85" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-09: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-10&amp;to=2025-10-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-10&amp;to=2025-10-10" target="_blank"><rect x="85" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-10-10: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-11&amp;to=2025-10-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-11&amp;to=2025-10-11" target="_blank"><rect x="85" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-11: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-12&amp;to=2025-10-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-12&amp;to=2025-10-12" target="_blank"><rect x="100" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-12: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-13&amp;to=2025-10-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-13&amp;to=2025-10-13" target="_blank"><rect x="100" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-13: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-14&amp;to=2025-10-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-14&amp;to=2025-10-14" target="_blank"><rect x="100" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-14: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-15&amp;to=2025-10-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-15&amp;to=2025-10-15" target="_blank"><rect x="100" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-10-15: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-16&amp;to=2025-10-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-16&amp;to=2025-10-16" target="_blank"><rect x="100" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-16: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-17&amp;to=2025-10-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-17&amp;to=2025-10-17" target="_blank"><rect x="100" y="140" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-17: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-18&amp;to=2025-10-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-18&amp;to=2025-10-18" target="_blank"><rect x="100" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-18: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-19&amp;to=2025-10-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-19&amp;to=2025-10-19" target="_blank"><rect x="115" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-19: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-20&amp;to=2025-10-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-20&amp;to=2025-10-20" target="_blank"><rect x="115" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-10-20: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-21&amp;to=2025-10-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-21&amp;to=2025-10-21" target="_blank"><rect x="115" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-21: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-22&amp;to=2025-10-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-22&amp;to=2025-10-22" target="_blank"><rect x="115" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-22: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-23&amp;to=2025-10-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-23&amp;to=2025-10-23" target="_blank"><rect x="115" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-10-23: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-24&amp;to=2025-10-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-24&amp;to=2025-10-24" target="_blank"><rect x="115" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-10-24: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-25&amp;to=2025-10-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-25&amp;to=2025-10-25" target="_blank"><rect x="115" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-25: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-26&amp;to=2025-10-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-26&amp;to=2025-10-26" target="_blank"><rect x="130" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-26: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-27&amp;to=2025-10-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-27&amp;to=2025-10-27" target="_blank"><rect x="130" y="80" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-27: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-28&amp;to=2025-10-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-28&amp;to=2025-10-28" target="_blank"><rect x="130" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-28: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-29&amp;to=2025-10-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-29&amp;to=2025-10-29" target="_blank"><rect x="130" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-29: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-30&amp;to=2025-10-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-30&amp;to=2025-10-30" target="_blank"><rect x="130" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-10-30: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-10-31&amp;to=2025-10-31" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-10-31&amp;to=2025-10-31" target="_blank"><rect x="130" y="140" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-10-31: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-01&amp;to=2025-11-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-01&amp;to=2025-11-01" target="_blank"><rect x="130" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-01: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-02&amp;to=2025-11-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-02&amp;to=2025-11-02" target="_blank"><rect x="145" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-02: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-03&amp;to=2025-11-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-03&amp;to=2025-11-03" target="_blank"><rect x="145" y="80" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-03: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-04&amp;to=2025-11-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-04&amp;to=2025-11-04" target="_blank"><rect x="145" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-04: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-05&amp;to=2025-11-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-05&amp;to=2025-11-05" target="_blank"><rect x="145" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-05: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-06&amp;to=2025-11-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-06&amp;to=2025-11-06" target="_blank"><rect x="145" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-06: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-07&amp;to=2025-11-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-07&amp;to=2025-11-07" target="_blank"><rect x="145" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-07: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-08&amp;to=2025-11-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-08&amp;to=2025-11-08" target="_blank"><rect x="145" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-08: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-09&amp;to=2025-11-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-09&amp;to=2025-11-09" target="_blank"><rect x="160" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-09: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-10&amp;to=2025-11-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-10&amp;to=2025-11-10" target="_blank"><rect x="160" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-10: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-11&amp;to=2025-11-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-11&amp;to=2025-11-11" target="_blank"><rect x="160" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-11: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-12&amp;to=2025-11-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-12&amp;to=2025-11-12" target="_blank"><rect x="160" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-12: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-13&amp;to=2025-11-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-13&amp;to=2025-11-13" target="_blank"><rect x="160" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-13: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-14&amp;to=2025-11-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-14&amp;to=2025-11-14" target="_blank"><rect x="160" y="140" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-14: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-15&amp;to=2025-11-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-15&amp;to=2025-11-15" target="_blank"><rect x="160" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-15: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-16&amp;to=2025-11-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-16&amp;to=2025-11-16" target="_blank"><rect x="175" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-16: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-17&amp;to=2025-11-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-17&amp;to=2025-11-17" target="_blank"><rect x="175" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-17: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-18&amp;to=2025-11-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-18&amp;to=2025-11-18" target="_blank"><rect x="175" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-18: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-19&amp;to=2025-11-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-19&amp;to=2025-11-19" target="_blank"><rect x="175" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-19: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-20&amp;to=2025-11-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-20&amp;to=2025-11-20" target="_blank"><rect x="175" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-20: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-21&amp;to=2025-11-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-21&amp;to=2025-11-21" target="_blank"><rect x="175" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-21: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-22&amp;to=2025-11-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-22&amp;to=2025-11-22" target="_blank"><rect x="175" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-22: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-23&amp;to=2025-11-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-23&amp;to=2025-11-23" target="_blank"><rect x="190" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-11-23: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-24&amp;to=2025-11-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-24&amp;to=2025-11-24" target="_blank"><rect x="190" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-24: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-25&amp;to=2025-11-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-25&amp;to=2025-11-25" target="_blank"><rect x="190" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-25: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-26&amp;to=2025-11-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-26&amp;to=2025-11-26" target="_blank"><rect x="190" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-26: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-27&amp;to=2025-11-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-27&amp;to=2025-11-27" target="_blank"><rect x="190" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-27: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-28&amp;to=2025-11-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-28&amp;to=2025-11-28" target="_blank"><rect x="190" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-11-28: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-29&amp;to=2025-11-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-29&amp;to=2025-11-29" target="_blank"><rect x="190" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-29: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-11-30&amp;to=2025-11-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-11-30&amp;to=2025-11-30" target="_blank"><rect x="205" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-11-30: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-01&amp;to=2025-12-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-01&amp;to=2025-12-01" target="_blank"><rect x="205" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-01: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-02&amp;to=2025-12-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-02&amp;to=2025-12-02" target="_blank"><rect x="205" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-12-02: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-03&amp;to=2025-12-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-03&amp;to=2025-12-03" target="_blank"><rect x="205" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-12-03: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-04&amp;to=2025-12-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-04&amp;to=2025-12-04" target="_blank"><rect x="205" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-12-04: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-05&amp;to=2025-12-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-05&amp;to=2025-12-05" target="_blank"><rect x="205" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-12-05: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-06&amp;to=2025-12-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-06&amp;to=2025-12-06" target="_blank"><rect x="205" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-06: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-07&amp;to=2025-12-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-07&amp;to=2025-12-07" target="_blank"><rect x="220" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-12-07: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-08&amp;to=2025-12-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-08&amp;to=2025-12-08" target="_blank"><rect x="220" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-08: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-09&amp;to=2025-12-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-09&amp;to=2025-12-09" target="_blank"><rect x="220" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-12-09: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-10&amp;to=2025-12-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-10&amp;to=2025-12-10" target="_blank"><rect x="220" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-12-10: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-11&amp;to=2025-12-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-11&amp;to=2025-12-11" target="_blank"><rect x="220" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-12-11: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-12&amp;to=2025-12-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-12&amp;to=2025-12-12" target="_blank"><rect x="220" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-12-12: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-13&amp;to=2025-12-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-13&amp;to=2025-12-13" target="_blank"><rect x="220" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-13: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-14&amp;to=2025-12-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-14&amp;to=2025-12-14" target="_blank"><rect x="235" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-12-14: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-15&amp;to=2025-12-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-15&amp;to=2025-12-15" target="_blank"><rect x="235" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-15: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-16&amp;to=2025-12-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-16&amp;to=2025-12-16" target="_blank"><rect x="235" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-12-16: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-17&amp;to=2025-12-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-17&amp;to=2025-12-17" target="_blank"><rect x="235" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-17: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-18&amp;to=2025-12-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-18&amp;to=2025-12-18" target="_blank"><rect x="235" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-18: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-19&amp;to=2025-12-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-19&amp;to=2025-12-19" target="_blank"><rect x="235" y="140" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-19: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-20&amp;to=2025-12-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-20&amp;to=2025-12-20" target="_blank"><rect x="235" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-12-20: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-21&amp;to=2025-12-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-21&amp;to=2025-12-21" target="_blank"><rect x="250" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2025-12-21: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-22&amp;to=2025-12-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-22&amp;to=2025-12-22" target="_blank"><rect x="250" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-22: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-23&amp;to=2025-12-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-23&amp;to=2025-12-23" target="_blank"><rect x="250" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2025-12-23: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-24&amp;to=2025-12-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-24&amp;to=2025-12-24" target="_blank"><rect x="250" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-24: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-25&amp;to=2025-12-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-25&amp;to=2025-12-25" target="_blank"><rect x="250" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-25: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-26&amp;to=2025-12-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-26&amp;to=2025-12-26" target="_blank"><rect x="250" y="140" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-26: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-27&amp;to=2025-12-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-27&amp;to=2025-12-27" target="_blank"><rect x="250" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-27: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-28&amp;to=2025-12-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-28&amp;to=2025-12-28" target="_blank"><rect x="265" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-28: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-29&amp;to=2025-12-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-29&amp;to=2025-12-29" target="_blank"><rect x="265" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-29: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-30&amp;to=2025-12-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-30&amp;to=2025-12-30" target="_blank"><rect x="265" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-30: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2025-12-31&amp;to=2025-12-31" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2025-12-31&amp;to=2025-12-31" target="_blank"><rect x="265" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2025-12-31: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-01&amp;to=2026-01-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-01&amp;to=2026-01-01" target="_blank"><rect x="265" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-01: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-02&amp;to=2026-01-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-02&amp;to=2026-01-02" target="_blank"><rect x="265" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-02: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-03&amp;to=2026-01-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-03&amp;to=2026-01-03" target="_blank"><rect x="265" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-03: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-04&amp;to=2026-01-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-04&amp;to=2026-01-04" target="_blank"><rect x="280" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-04: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-05&amp;to=2026-01-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-05&amp;to=2026-01-05" target="_blank"><rect x="280" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-01-05: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-06&amp;to=2026-01-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-06&amp;to=2026-01-06" target="_blank"><rect x="280" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-06: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-07&amp;to=2026-01-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-07&amp;to=2026-01-07" target="_blank"><rect x="280" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-01-07: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-08&amp;to=2026-01-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-08&amp;to=2026-01-08" target="_blank"><rect x="280" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-08: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-09&amp;to=2026-01-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-09&amp;to=2026-01-09" target="_blank"><rect x="280" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-01-09: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-10&amp;to=2026-01-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-10&amp;to=2026-01-10" target="_blank"><rect x="280" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-10: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-11&amp;to=2026-01-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-11&amp;to=2026-01-11" target="_blank"><rect x="295" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-11: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-12&amp;to=2026-01-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-12&amp;to=2026-01-12" target="_blank"><rect x="295" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-12: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-13&amp;to=2026-01-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-13&amp;to=2026-01-13" target="_blank"><rect x="295" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-01-13: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-14&amp;to=2026-01-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-14&amp;to=2026-01-14" target="_blank"><rect x="295" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-14: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-15&amp;to=2026-01-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-15&amp;to=2026-01-15" target="_blank"><rect x="295" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-15: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-16&amp;to=2026-01-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-16&amp;to=2026-01-16" target="_blank"><rect x="295" y="140" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-16: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-17&amp;to=2026-01-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-17&amp;to=2026-01-17" target="_blank"><rect x="295" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-17: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-18&amp;to=2026-01-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-18&amp;to=2026-01-18" target="_blank"><rect x="310" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-18: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-19&amp;to=2026-01-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-19&amp;to=2026-01-19" target="_blank"><rect x="310" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-01-19: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-20&amp;to=2026-01-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-20&amp;to=2026-01-20" target="_blank"><rect x="310" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-20: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-21&amp;to=2026-01-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-21&amp;to=2026-01-21" target="_blank"><rect x="310" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-21: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-22&amp;to=2026-01-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-22&amp;to=2026-01-22" target="_blank"><rect x="310" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-01-22: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-23&amp;to=2026-01-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-23&amp;to=2026-01-23" target="_blank"><rect x="310" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-01-23: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-24&amp;to=2026-01-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-24&amp;to=2026-01-24" target="_blank"><rect x="310" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-24: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-25&amp;to=2026-01-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-25&amp;to=2026-01-25" target="_blank"><rect x="325" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-25: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-26&amp;to=2026-01-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-26&amp;to=2026-01-26" target="_blank"><rect x="325" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-26: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-27&amp;to=2026-01-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-27&amp;to=2026-01-27" target="_blank"><rect x="325" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-27: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-28&amp;to=2026-01-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-28&amp;to=2026-01-28" target="_blank"><rect x="325" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-01-28: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-29&amp;to=2026-01-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-29&amp;to=2026-01-29" target="_blank"><rect x="325" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-01-29: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-30&amp;to=2026-01-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-30&amp;to=2026-01-30" target="_blank"><rect x="325" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-30: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-01-31&amp;to=2026-01-31" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-01-31&amp;to=2026-01-31" target="_blank"><rect x="325" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-01-31: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-01&amp;to=2026-02-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-01&amp;to=2026-02-01" target="_blank"><rect x="340" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-01: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-02&amp;to=2026-02-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-02&amp;to=2026-02-02" target="_blank"><rect x="340" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-02-02: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-03&amp;to=2026-02-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-03&amp;to=2026-02-03" target="_blank"><rect x="340" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-03: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-04&amp;to=2026-02-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-04&amp;to=2026-02-04" target="_blank"><rect x="340" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-04: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-05&amp;to=2026-02-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-05&amp;to=2026-02-05" target="_blank"><rect x="340" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-02-05: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-06&amp;to=2026-02-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-06&amp;to=2026-02-06" target="_blank"><rect x="340" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-02-06: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-07&amp;to=2026-02-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-07&amp;to=2026-02-07" target="_blank"><rect x="340" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-07: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-08&amp;to=2026-02-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-08&amp;to=2026-02-08" target="_blank"><rect x="355" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-02-08: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-09&amp;to=2026-02-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-09&amp;to=2026-02-09" target="_blank"><rect x="355" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-02-09: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-10&amp;to=2026-02-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-10&amp;to=2026-02-10" target="_blank"><rect x="355" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-02-10: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-11&amp;to=2026-02-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-11&amp;to=2026-02-11" target="_blank"><rect x="355" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-11: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-12&amp;to=2026-02-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-12&amp;to=2026-02-12" target="_blank"><rect x="355" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-02-12: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-13&amp;to=2026-02-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-13&amp;to=2026-02-13" target="_blank"><rect x="355" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-02-13: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-14&amp;to=2026-02-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-14&amp;to=2026-02-14" target="_blank"><rect x="355" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-14: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-15&amp;to=2026-02-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-15&amp;to=2026-02-15" target="_blank"><rect x="370" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-15: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-16&amp;to=2026-02-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-16&amp;to=2026-02-16" target="_blank"><rect x="370" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-02-16: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-17&amp;to=2026-02-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-17&amp;to=2026-02-17" target="_blank"><rect x="370" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-17: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-18&amp;to=2026-02-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-18&amp;to=2026-02-18" target="_blank"><rect x="370" y="110" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-02-18: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-19&amp;to=2026-02-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-19&amp;to=2026-02-19" target="_blank"><rect x="370" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-02-19: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-20&amp;to=2026-02-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-20&amp;to=2026-02-20" target="_blank"><rect x="370" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-02-20: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-21&amp;to=2026-02-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-21&amp;to=2026-02-21" target="_blank"><rect x="370" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-21: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-22&amp;to=2026-02-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-22&amp;to=2026-02-22" target="_blank"><rect x="385" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-22: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-23&amp;to=2026-02-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-23&amp;to=2026-02-23" target="_blank"><rect x="385" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-02-23: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-24&amp;to=2026-02-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-24&amp;to=2026-02-24" target="_blank"><rect x="385" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-24: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-25&amp;to=2026-02-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-25&amp;to=2026-02-25" target="_blank"><rect x="385" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-25: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-26&amp;to=2026-02-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-26&amp;to=2026-02-26" target="_blank"><rect x="385" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-02-26: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-27&amp;to=2026-02-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-27&amp;to=2026-02-27" target="_blank"><rect x="385" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-02-27: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-02-28&amp;to=2026-02-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-02-28&amp;to=2026-02-28" target="_blank"><rect x="385" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-02-28: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-01&amp;to=2026-03-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-01&amp;to=2026-03-01" target="_blank"><rect x="400" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-01: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-02&amp;to=2026-03-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-02&amp;to=2026-03-02" target="_blank"><rect x="400" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-02: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-03&amp;to=2026-03-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-03&amp;to=2026-03-03" target="_blank"><rect x="400" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-03: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-04&amp;to=2026-03-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-04&amp;to=2026-03-04" target="_blank"><rect x="400" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-04: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-05&amp;to=2026-03-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-05&amp;to=2026-03-05" target="_blank"><rect x="400" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-05: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-06&amp;to=2026-03-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-06&amp;to=2026-03-06" target="_blank"><rect x="400" y="140" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-06: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-07&amp;to=2026-03-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-07&amp;to=2026-03-07" target="_blank"><rect x="400" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-07: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-08&amp;to=2026-03-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-08&amp;to=2026-03-08" target="_blank"><rect x="415" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-08: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-09&amp;to=2026-03-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-09&amp;to=2026-03-09" target="_blank"><rect x="415" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-09: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-10&amp;to=2026-03-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-10&amp;to=2026-03-10" target="_blank"><rect x="415" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-10: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-11&amp;to=2026-03-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-11&amp;to=2026-03-11" target="_blank"><rect x="415" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-11: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-12&amp;to=2026-03-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-12&amp;to=2026-03-12" target="_blank"><rect x="415" y="125" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-12: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-13&amp;to=2026-03-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-13&amp;to=2026-03-13" target="_blank"><rect x="415" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-13: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-14&amp;to=2026-03-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-14&amp;to=2026-03-14" target="_blank"><rect x="415" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-14: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-15&amp;to=2026-03-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-15&amp;to=2026-03-15" target="_blank"><rect x="430" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-15: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-16&amp;to=2026-03-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-16&amp;to=2026-03-16" target="_blank"><rect x="430" y="80" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-16: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-17&amp;to=2026-03-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-17&amp;to=2026-03-17" target="_blank"><rect x="430" y="95" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-17: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-18&amp;to=2026-03-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-18&amp;to=2026-03-18" target="_blank"><rect x="430" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-18: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-19&amp;to=2026-03-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-19&amp;to=2026-03-19" target="_blank"><rect x="430" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-19: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-20&amp;to=2026-03-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-20&amp;to=2026-03-20" target="_blank"><rect x="430" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-20: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-21&amp;to=2026-03-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-21&amp;to=2026-03-21" target="_blank"><rect x="430" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-21: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-22&amp;to=2026-03-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-22&amp;to=2026-03-22" target="_blank"><rect x="445" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-22: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-23&amp;to=2026-03-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-23&amp;to=2026-03-23" target="_blank"><rect x="445" y="80" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-23: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-24&amp;to=2026-03-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-24&amp;to=2026-03-24" target="_blank"><rect x="445" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-24: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-25&amp;to=2026-03-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-25&amp;to=2026-03-25" target="_blank"><rect x="445" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-25: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-26&amp;to=2026-03-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-26&amp;to=2026-03-26" target="_blank"><rect x="445" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-26: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-27&amp;to=2026-03-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-27&amp;to=2026-03-27" target="_blank"><rect x="445" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-27: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-28&amp;to=2026-03-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-28&amp;to=2026-03-28" target="_blank"><rect x="445" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-03-28: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-29&amp;to=2026-03-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-29&amp;to=2026-03-29" target="_blank"><rect x="460" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-29: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-30&amp;to=2026-03-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-30&amp;to=2026-03-30" target="_blank"><rect x="460" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-03-30: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-03-31&amp;to=2026-03-31" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-03-31&amp;to=2026-03-31" target="_blank"><rect x="460" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-03-31: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-01&amp;to=2026-04-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-01&amp;to=2026-04-01" target="_blank"><rect x="460" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-01: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-02&amp;to=2026-04-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-02&amp;to=2026-04-02" target="_blank"><rect x="460" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-02: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-03&amp;to=2026-04-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-03&amp;to=2026-04-03" target="_blank"><rect x="460" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-03: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-04&amp;to=2026-04-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-04&amp;to=2026-04-04" target="_blank"><rect x="460" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-04-04: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-05&amp;to=2026-04-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-05&amp;to=2026-04-05" target="_blank"><rect x="475" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-04-05: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-06&amp;to=2026-04-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-06&amp;to=2026-04-06" target="_blank"><rect x="475" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-06: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-07&amp;to=2026-04-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-07&amp;to=2026-04-07" target="_blank"><rect x="475" y="95" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-04-07: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-08&amp;to=2026-04-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-08&amp;to=2026-04-08" target="_blank"><rect x="475" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-04-08: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-09&amp;to=2026-04-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-09&amp;to=2026-04-09" target="_blank"><rect x="475" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-04-09: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-10&amp;to=2026-04-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-10&amp;to=2026-04-10" target="_blank"><rect x="475" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-04-10: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-11&amp;to=2026-04-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-11&amp;to=2026-04-11" target="_blank"><rect x="475" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-04-11: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-12&amp;to=2026-04-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-12&amp;to=2026-04-12" target="_blank"><rect x="490" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-04-12: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-13&amp;to=2026-04-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-13&amp;to=2026-04-13" target="_blank"><rect x="490" y="80" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-04-13: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-14&amp;to=2026-04-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-14&amp;to=2026-04-14" target="_blank"><rect x="490" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-14: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-15&amp;to=2026-04-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-15&amp;to=2026-04-15" target="_blank"><rect x="490" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-15: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-16&amp;to=2026-04-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-16&amp;to=2026-04-16" target="_blank"><rect x="490" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-16: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-17&amp;to=2026-04-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-17&amp;to=2026-04-17" target="_blank"><rect x="490" y="140" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-04-17: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-18&amp;to=2026-04-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-18&amp;to=2026-04-18" target="_blank"><rect x="490" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-04-18: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-19&amp;to=2026-04-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-19&amp;to=2026-04-19" target="_blank"><rect x="505" y="65" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>2026-04-19: 0 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-20&amp;to=2026-04-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-20&amp;to=2026-04-20" target="_blank"><rect x="505" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-04-20: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-21&amp;to=2026-04-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-21&amp;to=2026-04-21" target="_blank"><rect x="505" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-21: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-22&amp;to=2026-04-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-22&amp;to=2026-04-22" target="_blank"><rect x="505" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-04-22: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-23&amp;to=2026-04-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-23&amp;to=2026-04-23" target="_blank"><rect x="505" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-04-23: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-24&amp;to=2026-04-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-24&amp;to=2026-04-24" target="_blank"><rect x="505" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-24: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-25&amp;to=2026-04-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-25&amp;to=2026-04-25" target="_blank"><rect x="505" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-04-25: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-26&amp;to=2026-04-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-26&amp;to=2026-04-26" target="_blank"><rect x="520" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-26: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-27&amp;to=2026-04-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-27&amp;to=2026-04-27" target="_blank"><rect x="520" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-04-27: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-28&amp;to=2026-04-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-28&amp;to=2026-04-28" target="_blank"><rect x="520" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-04-28: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-29&amp;to=2026-04-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-29&amp;to=2026-04-29" target="_blank"><rect x="520" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-04-29: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-04-30&amp;to=2026-04-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-04-30&amp;to=2026-04-30" target="_blank"><rect x="520" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-04-30: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-01&amp;to=2026-05-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-01&amp;to=2026-05-01" target="_blank"><rect x="520" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-01: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-02&amp;to=2026-05-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-02&amp;to=2026-05-02" target="_blank"><rect x="520" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-02: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-03&amp;to=2026-05-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-03&amp;to=2026-05-03" target="_blank"><rect x="535" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-05-03: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-04&amp;to=2026-05-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-04&amp;to=2026-05-04" target="_blank"><rect x="535" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-04: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-05&amp;to=2026-05-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-05&amp;to=2026-05-05" target="_blank"><rect x="535" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-05: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-06&amp;to=2026-05-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-06&amp;to=2026-05-06" target="_blank"><rect x="535" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-06: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-07&amp;to=2026-05-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-07&amp;to=2026-05-07" target="_blank"><rect x="535" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-07: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-08&amp;to=2026-05-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-08&amp;to=2026-05-08" target="_blank"><rect x="535" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-08: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-09&amp;to=2026-05-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-09&amp;to=2026-05-09" target="_blank"><rect x="535" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-09: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-10&amp;to=2026-05-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-10&amp;to=2026-05-10" target="_blank"><rect x="550" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-10: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-11&amp;to=2026-05-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-11&amp;to=2026-05-11" target="_blank"><rect x="550" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-11: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-12&amp;to=2026-05-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-12&amp;to=2026-05-12" target="_blank"><rect x="550" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-12: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-13&amp;to=2026-05-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-13&amp;to=2026-05-13" target="_blank"><rect x="550" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-13: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-14&amp;to=2026-05-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-14&amp;to=2026-05-14" target="_blank"><rect x="550" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-14: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-15&amp;to=2026-05-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-15&amp;to=2026-05-15" target="_blank"><rect x="550" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-15: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-16&amp;to=2026-05-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-16&amp;to=2026-05-16" target="_blank"><rect x="550" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-05-16: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-17&amp;to=2026-05-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-17&amp;to=2026-05-17" target="_blank"><rect x="565" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-05-17: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-18&amp;to=2026-05-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-18&amp;to=2026-05-18" target="_blank"><rect x="565" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-18: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-19&amp;to=2026-05-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-19&amp;to=2026-05-19" target="_blank"><rect x="565" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-19: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-20&amp;to=2026-05-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-20&amp;to=2026-05-20" target="_blank"><rect x="565" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-20: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-21&amp;to=2026-05-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-21&amp;to=2026-05-21" target="_blank"><rect x="565" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-21: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-22&amp;to=2026-05-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-22&amp;to=2026-05-22" target="_blank"><rect x="565" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-22: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-23&amp;to=2026-05-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-23&amp;to=2026-05-23" target="_blank"><rect x="565" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-23: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-24&amp;to=2026-05-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-24&amp;to=2026-05-24" target="_blank"><rect x="580" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-24: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-25&amp;to=2026-05-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-25&amp;to=2026-05-25" target="_blank"><rect x="580" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-25: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-26&amp;to=2026-05-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-26&amp;to=2026-05-26" target="_blank"><rect x="580" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-26: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-27&amp;to=2026-05-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-27&amp;to=2026-05-27" target="_blank"><rect x="580" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-27: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-28&amp;to=2026-05-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-28&amp;to=2026-05-28" target="_blank"><rect x="580" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-28: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-29&amp;to=2026-05-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-29&amp;to=2026-05-29" target="_blank"><rect x="580" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-05-29: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-30&amp;to=2026-05-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-30&amp;to=2026-05-30" target="_blank"><rect x="580" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-05-30: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-05-31&amp;to=2026-05-31" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-05-31&amp;to=2026-05-31" target="_blank"><rect x="595" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-05-31: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-01&amp;to=2026-06-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-01&amp;to=2026-06-01" target="_blank"><rect x="595" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-01: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-02&amp;to=2026-06-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-02&amp;to=2026-06-02" target="_blank"><rect x="595" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-02: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-03&amp;to=2026-06-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-03&amp;to=2026-06-03" target="_blank"><rect x="595" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-03: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-04&amp;to=2026-06-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-04&amp;to=2026-06-04" target="_blank"><rect x="595" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-06-04: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-05&amp;to=2026-06-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-05&amp;to=2026-06-05" target="_blank"><rect x="595" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-05: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-06&amp;to=2026-06-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-06&amp;to=2026-06-06" target="_blank"><rect x="595" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-06-06: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-07&amp;to=2026-06-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-07&amp;to=2026-06-07" target="_blank"><rect x="610" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-06-07: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-08&amp;to=2026-06-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-08&amp;to=2026-06-08" target="_blank"><rect x="610" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-08: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-09&amp;to=2026-06-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-09&amp;to=2026-06-09" target="_blank"><rect x="610" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-09: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-10&amp;to=2026-06-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-10&amp;to=2026-06-10" target="_blank"><rect x="610" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-06-10: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-11&amp;to=2026-06-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-11&amp;to=2026-06-11" target="_blank"><rect x="610" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-11: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-12&amp;to=2026-06-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-12&amp;to=2026-06-12" target="_blank"><rect x="610" y="140" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-06-12: 11 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-13&amp;to=2026-06-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-13&amp;to=2026-06-13" target="_blank"><rect x="610" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-06-13: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-14&amp;to=2026-06-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-14&amp;to=2026-06-14" target="_blank"><rect x="625" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-06-14: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-15&amp;to=2026-06-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-15&amp;to=2026-06-15" target="_blank"><rect x="625" y="80" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-06-15: 14 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-16&amp;to=2026-06-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-16&amp;to=2026-06-16" target="_blank"><rect x="625" y="95" width="11" height="11" rx="2" fill="#fb7185" class="contrib-box"><title>2026-06-16: 16 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-17&amp;to=2026-06-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-17&amp;to=2026-06-17" target="_blank"><rect x="625" y="110" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-06-17: 11 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-18&amp;to=2026-06-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-18&amp;to=2026-06-18" target="_blank"><rect x="625" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-18: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-19&amp;to=2026-06-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-19&amp;to=2026-06-19" target="_blank"><rect x="625" y="140" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-06-19: 10 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-20&amp;to=2026-06-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-20&amp;to=2026-06-20" target="_blank"><rect x="625" y="155" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-20: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-21&amp;to=2026-06-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-21&amp;to=2026-06-21" target="_blank"><rect x="640" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-06-21: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-22&amp;to=2026-06-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-22&amp;to=2026-06-22" target="_blank"><rect x="640" y="80" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-06-22: 13 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-23&amp;to=2026-06-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-23&amp;to=2026-06-23" target="_blank"><rect x="640" y="95" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-06-23: 11 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-24&amp;to=2026-06-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-24&amp;to=2026-06-24" target="_blank"><rect x="640" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-24: 9 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-25&amp;to=2026-06-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-25&amp;to=2026-06-25" target="_blank"><rect x="640" y="125" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-06-25: 12 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-26&amp;to=2026-06-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-26&amp;to=2026-06-26" target="_blank"><rect x="640" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-26: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-27&amp;to=2026-06-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-27&amp;to=2026-06-27" target="_blank"><rect x="640" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-06-27: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-28&amp;to=2026-06-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-28&amp;to=2026-06-28" target="_blank"><rect x="655" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-06-28: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-29&amp;to=2026-06-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-29&amp;to=2026-06-29" target="_blank"><rect x="655" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-29: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-06-30&amp;to=2026-06-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-06-30&amp;to=2026-06-30" target="_blank"><rect x="655" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-06-30: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-01&amp;to=2026-07-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-01&amp;to=2026-07-01" target="_blank"><rect x="655" y="110" width="11" height="11" rx="2" fill="#fb7185" class="contrib-box"><title>2026-07-01: 16 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-02&amp;to=2026-07-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-02&amp;to=2026-07-02" target="_blank"><rect x="655" y="125" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-07-02: 10 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-03&amp;to=2026-07-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-03&amp;to=2026-07-03" target="_blank"><rect x="655" y="140" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-07-03: 10 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-04&amp;to=2026-07-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-04&amp;to=2026-07-04" target="_blank"><rect x="655" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-04: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-05&amp;to=2026-07-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-05&amp;to=2026-07-05" target="_blank"><rect x="670" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-07-05: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-06&amp;to=2026-07-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-06&amp;to=2026-07-06" target="_blank"><rect x="670" y="80" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-07-06: 10 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-07&amp;to=2026-07-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-07&amp;to=2026-07-07" target="_blank"><rect x="670" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-07: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-08&amp;to=2026-07-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-08&amp;to=2026-07-08" target="_blank"><rect x="670" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-08: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-09&amp;to=2026-07-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-09&amp;to=2026-07-09" target="_blank"><rect x="670" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-09: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-10&amp;to=2026-07-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-10&amp;to=2026-07-10" target="_blank"><rect x="670" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-10: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-11&amp;to=2026-07-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-11&amp;to=2026-07-11" target="_blank"><rect x="670" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-11: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-12&amp;to=2026-07-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-12&amp;to=2026-07-12" target="_blank"><rect x="685" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-12: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-13&amp;to=2026-07-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-13&amp;to=2026-07-13" target="_blank"><rect x="685" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-13: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-14&amp;to=2026-07-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-14&amp;to=2026-07-14" target="_blank"><rect x="685" y="95" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-07-14: 10 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-15&amp;to=2026-07-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-15&amp;to=2026-07-15" target="_blank"><rect x="685" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-15: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-16&amp;to=2026-07-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-16&amp;to=2026-07-16" target="_blank"><rect x="685" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-16: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-17&amp;to=2026-07-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-17&amp;to=2026-07-17" target="_blank"><rect x="685" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-17: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-18&amp;to=2026-07-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-18&amp;to=2026-07-18" target="_blank"><rect x="685" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-07-18: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-19&amp;to=2026-07-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-19&amp;to=2026-07-19" target="_blank"><rect x="700" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-07-19: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-20&amp;to=2026-07-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-20&amp;to=2026-07-20" target="_blank"><rect x="700" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-20: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-21&amp;to=2026-07-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-21&amp;to=2026-07-21" target="_blank"><rect x="700" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-21: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-22&amp;to=2026-07-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-22&amp;to=2026-07-22" target="_blank"><rect x="700" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-22: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-23&amp;to=2026-07-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-23&amp;to=2026-07-23" target="_blank"><rect x="700" y="125" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-23: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-24&amp;to=2026-07-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-24&amp;to=2026-07-24" target="_blank"><rect x="700" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-24: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-25&amp;to=2026-07-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-25&amp;to=2026-07-25" target="_blank"><rect x="700" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-25: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-26&amp;to=2026-07-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-26&amp;to=2026-07-26" target="_blank"><rect x="715" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-26: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-27&amp;to=2026-07-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-27&amp;to=2026-07-27" target="_blank"><rect x="715" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-27: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-28&amp;to=2026-07-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-28&amp;to=2026-07-28" target="_blank"><rect x="715" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-28: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-29&amp;to=2026-07-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-29&amp;to=2026-07-29" target="_blank"><rect x="715" y="110" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-29: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-30&amp;to=2026-07-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-30&amp;to=2026-07-30" target="_blank"><rect x="715" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-07-30: 9 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-07-31&amp;to=2026-07-31" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-07-31&amp;to=2026-07-31" target="_blank"><rect x="715" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-07-31: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-01&amp;to=2026-08-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-01&amp;to=2026-08-01" target="_blank"><rect x="715" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-08-01: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-02&amp;to=2026-08-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-02&amp;to=2026-08-02" target="_blank"><rect x="730" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-08-02: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-03&amp;to=2026-08-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-03&amp;to=2026-08-03" target="_blank"><rect x="730" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-03: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-04&amp;to=2026-08-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-04&amp;to=2026-08-04" target="_blank"><rect x="730" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-04: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-05&amp;to=2026-08-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-05&amp;to=2026-08-05" target="_blank"><rect x="730" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-05: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-06&amp;to=2026-08-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-06&amp;to=2026-08-06" target="_blank"><rect x="730" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-06: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-07&amp;to=2026-08-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-07&amp;to=2026-08-07" target="_blank"><rect x="730" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-07: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-08&amp;to=2026-08-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-08&amp;to=2026-08-08" target="_blank"><rect x="730" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-08: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-09&amp;to=2026-08-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-09&amp;to=2026-08-09" target="_blank"><rect x="745" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-08-09: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-10&amp;to=2026-08-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-10&amp;to=2026-08-10" target="_blank"><rect x="745" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-10: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-11&amp;to=2026-08-11" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-11&amp;to=2026-08-11" target="_blank"><rect x="745" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-11: 9 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-12&amp;to=2026-08-12" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-12&amp;to=2026-08-12" target="_blank"><rect x="745" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-12: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-13&amp;to=2026-08-13" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-13&amp;to=2026-08-13" target="_blank"><rect x="745" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-13: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-14&amp;to=2026-08-14" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-14&amp;to=2026-08-14" target="_blank"><rect x="745" y="140" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-14: 4 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-15&amp;to=2026-08-15" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-15&amp;to=2026-08-15" target="_blank"><rect x="745" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-15: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-16&amp;to=2026-08-16" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-16&amp;to=2026-08-16" target="_blank"><rect x="760" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-16: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-17&amp;to=2026-08-17" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-17&amp;to=2026-08-17" target="_blank"><rect x="760" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-17: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-18&amp;to=2026-08-18" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-18&amp;to=2026-08-18" target="_blank"><rect x="760" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-18: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-19&amp;to=2026-08-19" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-19&amp;to=2026-08-19" target="_blank"><rect x="760" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-19: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-20&amp;to=2026-08-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-20&amp;to=2026-08-20" target="_blank"><rect x="760" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-20: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-21&amp;to=2026-08-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-21&amp;to=2026-08-21" target="_blank"><rect x="760" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-21: 9 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-22&amp;to=2026-08-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-22&amp;to=2026-08-22" target="_blank"><rect x="760" y="155" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-08-22: 2 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-23&amp;to=2026-08-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-23&amp;to=2026-08-23" target="_blank"><rect x="775" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-23: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-24&amp;to=2026-08-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-24&amp;to=2026-08-24" target="_blank"><rect x="775" y="80" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-24: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-25&amp;to=2026-08-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-25&amp;to=2026-08-25" target="_blank"><rect x="775" y="95" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-08-25: 10 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-26&amp;to=2026-08-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-26&amp;to=2026-08-26" target="_blank"><rect x="775" y="110" width="11" height="11" rx="2" fill="#fb7185" class="contrib-box"><title>2026-08-26: 20 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-27&amp;to=2026-08-27" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-27&amp;to=2026-08-27" target="_blank"><rect x="775" y="125" width="11" height="11" rx="2" fill="#fb7185" class="contrib-box"><title>2026-08-27: 19 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-28&amp;to=2026-08-28" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-28&amp;to=2026-08-28" target="_blank"><rect x="775" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-28: 9 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-29&amp;to=2026-08-29" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-29&amp;to=2026-08-29" target="_blank"><rect x="775" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-08-29: 3 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-30&amp;to=2026-08-30" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-30&amp;to=2026-08-30" target="_blank"><rect x="790" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-08-30: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-08-31&amp;to=2026-08-31" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-08-31&amp;to=2026-08-31" target="_blank"><rect x="790" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-08-31: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-01&amp;to=2026-09-01" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-01&amp;to=2026-09-01" target="_blank"><rect x="790" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-09-01: 9 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-02&amp;to=2026-09-02" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-02&amp;to=2026-09-02" target="_blank"><rect x="790" y="110" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-09-02: 13 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-03&amp;to=2026-09-03" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-03&amp;to=2026-09-03" target="_blank"><rect x="790" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-09-03: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-04&amp;to=2026-09-04" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-04&amp;to=2026-09-04" target="_blank"><rect x="790" y="140" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-09-04: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-05&amp;to=2026-09-05" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-05&amp;to=2026-09-05" target="_blank"><rect x="790" y="155" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-09-05: 5 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-06&amp;to=2026-09-06" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-06&amp;to=2026-09-06" target="_blank"><rect x="805" y="65" width="11" height="11" rx="2" fill="#4c0519" class="contrib-box"><title>2026-09-06: 1 contribution (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-07&amp;to=2026-09-07" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-07&amp;to=2026-09-07" target="_blank"><rect x="805" y="80" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-09-07: 9 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-08&amp;to=2026-09-08" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-08&amp;to=2026-09-08" target="_blank"><rect x="805" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-09-08: 6 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-09&amp;to=2026-09-09" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-09&amp;to=2026-09-09" target="_blank"><rect x="805" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-09-09: 8 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-10&amp;to=2026-09-10" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-10&amp;to=2026-09-10" target="_blank"><rect x="805" y="125" width="11" height="11" rx="2" fill="#fb7185" class="contrib-box"><title>2026-09-10: 19 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
   </g>
 
   <!-- Days of week indicators -->
@@ -482,18 +487,18 @@
   </g>
 
   <!-- Laser Radar Scanning Sweep -->
-  <g clip-path="url(#gridClip)">
+  <g clip-path="url(#gridClip)" pointer-events="none">
     <clipPath id="gridClip">
       <rect x="40" y="65" width="780" height="105" />
     </clipPath>
     <rect x="0" y="55" width="70" height="125" fill="url(#radarBeam)" class="radar-beam" />
   </g>
 
-  <!-- Realtime Web Trail along actual nodes -->
-  <path d="M 45,100 L 165,145 L 270,115 L 390,85 L 510,130 L 585,130 L 660,130 L 735,130 Z" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-opacity="0.4" class="web-trail" />
+  <!-- Realtime Web Trail -->
+  <path d="M 45,100 L 165,145 L 270,115 L 390,85 L 510,130 L 585,130 L 660,130 L 735,130 Z" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-opacity="0.4" class="web-trail" pointer-events="none" />
 
   <!-- Spider Bot Crawling across user's real commits -->
-  <g>
+  <g pointer-events="none">
     <use href="#spiderBot">
       <animateMotion path="M 45,100 L 165,145 L 270,115 L 390,85 L 510,130 L 585,130 L 660,130 L 735,130 Z" dur="20s" repeatCount="indefinite" rotate="auto" />
     </use>
@@ -501,7 +506,9 @@
 
   <!-- Bottom Legend & Telemetry Bar -->
   <g transform="translate(40, 216)">
-    <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">1389+ LOGGED</tspan> | SYSTEM: <tspan fill="#e11d48" font-weight="700">ONLINE</tspan></text>
+    <a href="https://github.com/evannixon?tab=overview" target="_blank" style="text-decoration: none;">
+      <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">1190+ LOGGED</tspan> | STATUS: <tspan fill="#e11d48" font-weight="700">ONLINE 🟢</tspan></text>
+    </a>
 
     <!-- Legend -->
     <g transform="translate(630, 0)">
@@ -515,5 +522,4 @@
       <text x="80" y="9" fill="#475569" font-size="8" class="tech-font">More</text>
     </g>
   </g>
-  </a>
 </svg>

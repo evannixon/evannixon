@@ -113,17 +113,35 @@ def generate_svg(calendar_data, output_path):
     while len(weeks) < 52:
         weeks.insert(0, {"contributionDays": [{"contributionCount": 0} for _ in range(7)]})
 
-    grid_rects = []
+    grid_elements = []
     active_points = []
 
     for c, week in enumerate(weeks):
         days = week.get("contributionDays", [])
         for r in range(7):
-            count = days[r].get("contributionCount", 0) if r < len(days) else 0
+            day_data = days[r] if r < len(days) else {}
+            count = day_data.get("contributionCount", 0)
+            date_str = day_data.get("date", "")
             color = get_color(count)
             x = START_X + c * (BOX_SIZE + BOX_GAP)
             y = START_Y + r * (BOX_SIZE + BOX_GAP)
-            grid_rects.append(f'<rect x="{x}" y="{y}" width="{BOX_SIZE}" height="{BOX_SIZE}" rx="2" fill="{color}" />')
+            
+            # Each box links specifically to that day's contribution overview!
+            if date_str:
+                day_link = f"https://github.com/{USERNAME}?tab=overview&amp;from={date_str}&amp;to={date_str}"
+                title_text = f"{date_str}: {count} contribution{'s' if count != 1 else ''} (Click to filter day)"
+            else:
+                day_link = f"https://github.com/{USERNAME}?tab=overview"
+                title_text = f"{count} contributions"
+
+            node_markup = (
+                f'<a href="{day_link}" xlink:href="{day_link}" target="_blank">'
+                f'<rect x="{x}" y="{y}" width="{BOX_SIZE}" height="{BOX_SIZE}" rx="2" fill="{color}" class="contrib-box">'
+                f'<title>{title_text}</title>'
+                f'</rect>'
+                f'</a>'
+            )
+            grid_elements.append(node_markup)
             
             if count > 0:
                 active_points.append((x + BOX_SIZE // 2, y + BOX_SIZE // 2))
@@ -144,10 +162,9 @@ def generate_svg(calendar_data, output_path):
         ]
 
     spider_path_d = f"M {selected_waypoints[0][0]},{selected_waypoints[0][1]} " + " ".join([f"L {x},{y}" for x, y in selected_waypoints[1:]]) + " Z"
-    grid_svg = "\n    ".join(grid_rects)
+    grid_svg = "\n    ".join(grid_elements)
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="100%" style="background: transparent; cursor: pointer;">
-  <a href="https://github.com/evannixon?tab=overview" target="_blank" style="text-decoration: none;">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="100%" style="background: transparent;">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -221,16 +238,18 @@ def generate_svg(calendar_data, output_path):
         stroke-dashoffset: -100;
       }}
     }}
-    .hover-border {{
-      transition: stroke 0.3s ease;
+    .contrib-box {{
+      transition: transform 0.2s ease, stroke 0.2s ease;
+      cursor: pointer;
     }}
-    svg:hover .hover-border {{
-      stroke: #e11d48;
+    .contrib-box:hover {{
+      stroke: #ffffff;
+      stroke-width: 1.5px;
     }}
   </style>
 
   <!-- Container Box -->
-  <rect x="2" y="2" width="{WIDTH - 4}" height="{HEIGHT - 4}" rx="10" fill="url(#bgGrad)" stroke="#272f3d" stroke-width="1.5" class="hover-border" />
+  <rect x="2" y="2" width="{WIDTH - 4}" height="{HEIGHT - 4}" rx="10" fill="url(#bgGrad)" stroke="#272f3d" stroke-width="1.5" />
   
   <!-- Corner Accents (Spidey HUD Styling) -->
   <path d="M 2 20 L 2 2 L 20 2" stroke="#e11d48" stroke-width="2.5" fill="none" />
@@ -240,21 +259,25 @@ def generate_svg(calendar_data, output_path):
 
   <!-- Top Header HUD -->
   <g transform="translate(40, 32)">
-    <circle cx="8" cy="8" r="7" fill="none" stroke="#e11d48" stroke-width="1.2" />
-    <circle cx="8" cy="8" r="3" fill="#e11d48" />
-    <line x1="8" y1="1" x2="8" y2="15" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
-    <line x1="1" y1="8" x2="15" y2="8" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
+    <a href="https://github.com/{USERNAME}?tab=overview" target="_blank" style="text-decoration: none;">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="#e11d48" stroke-width="1.2" />
+      <circle cx="8" cy="8" r="3" fill="#e11d48" />
+      <line x1="8" y1="1" x2="8" y2="15" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
+      <line x1="1" y1="8" x2="15" y2="8" stroke="#e11d48" stroke-width="1" stroke-opacity="0.5" />
 
-    <text x="24" y="9" fill="#f1f5f9" font-size="13" font-weight="700" letter-spacing="1.5" class="tech-font">SPIDER-TRACKER // REALTIME RADAR PATROL MATRIX</text>
-    <text x="24" y="22" fill="#64748b" font-size="9" letter-spacing="1" class="tech-font">LIVE SYNC • CLICK ANYWHERE TO VIEW GITHUB ACTIVITY TIMELINE</text>
+      <text x="24" y="9" fill="#f1f5f9" font-size="13" font-weight="700" letter-spacing="1.5" class="tech-font">SPIDER-TRACKER // REALTIME RADAR PATROL MATRIX</text>
+      <text x="24" y="22" fill="#64748b" font-size="9" letter-spacing="1" class="tech-font">CLICK ANY NODE TO FILTER THAT DAY'S COMMITS ON GITHUB</text>
+    </a>
 
     <!-- Live Indicator Pill -->
-    <rect x="{WIDTH - 240}" y="-2" width="150" height="24" rx="4" fill="#161b22" stroke="#334155" stroke-width="1" />
-    <circle cx="{WIDTH - 228}" cy="10" r="3.5" fill="#e11d48" class="live-dot" />
-    <text x="{WIDTH - 216}" y="14" fill="#cbd5e1" font-size="10" font-weight="600" letter-spacing="0.8" class="tech-font">API: SYNCED LIVE</text>
+    <a href="https://github.com/{USERNAME}?tab=repositories" target="_blank">
+      <rect x="{WIDTH - 240}" y="-2" width="150" height="24" rx="4" fill="#161b22" stroke="#334155" stroke-width="1" />
+      <circle cx="{WIDTH - 228}" cy="10" r="3.5" fill="#e11d48" class="live-dot" />
+      <text x="{WIDTH - 216}" y="14" fill="#cbd5e1" font-size="10" font-weight="600" letter-spacing="0.8" class="tech-font">API: SYNCED LIVE</text>
+    </a>
   </g>
 
-  <!-- Contribution Heatmap Grid -->
+  <!-- Contribution Heatmap Grid (Interactive clickable rects) -->
   <g>
     {grid_svg}
   </g>
@@ -267,18 +290,18 @@ def generate_svg(calendar_data, output_path):
   </g>
 
   <!-- Laser Radar Scanning Sweep -->
-  <g clip-path="url(#gridClip)">
+  <g clip-path="url(#gridClip)" pointer-events="none">
     <clipPath id="gridClip">
       <rect x="{START_X}" y="{START_Y}" width="{COLS * (BOX_SIZE + BOX_GAP)}" height="{ROWS * (BOX_SIZE + BOX_GAP)}" />
     </clipPath>
     <rect x="0" y="{START_Y - 10}" width="70" height="{ROWS * (BOX_SIZE + BOX_GAP) + 20}" fill="url(#radarBeam)" class="radar-beam" />
   </g>
 
-  <!-- Realtime Web Trail along actual nodes -->
-  <path d="{spider_path_d}" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-opacity="0.4" class="web-trail" />
+  <!-- Realtime Web Trail -->
+  <path d="{spider_path_d}" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-opacity="0.4" class="web-trail" pointer-events="none" />
 
   <!-- Spider Bot Crawling across user's real commits -->
-  <g>
+  <g pointer-events="none">
     <use href="#spiderBot">
       <animateMotion path="{spider_path_d}" dur="20s" repeatCount="indefinite" rotate="auto" />
     </use>
@@ -286,7 +309,9 @@ def generate_svg(calendar_data, output_path):
 
   <!-- Bottom Legend & Telemetry Bar -->
   <g transform="translate(40, {HEIGHT - 24})">
-    <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">{total_contributions}+ LOGGED</tspan> | SYSTEM: <tspan fill="#e11d48" font-weight="700">ONLINE</tspan></text>
+    <a href="https://github.com/{USERNAME}?tab=overview" target="_blank" style="text-decoration: none;">
+      <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">{total_contributions}+ LOGGED</tspan> | STATUS: <tspan fill="#e11d48" font-weight="700">ONLINE 🟢</tspan></text>
+    </a>
 
     <!-- Legend -->
     <g transform="translate({WIDTH - 230}, 0)">
@@ -300,12 +325,11 @@ def generate_svg(calendar_data, output_path):
       <text x="80" y="9" fill="#475569" font-size="8" class="tech-font">More</text>
     </g>
   </g>
-  </a>
 </svg>
 """
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(f"Generated real-time Spider-Tracker SVG at: {output_path} (Total contributions: {total_contributions})")
+    print(f"Generated per-box clickable Spider-Tracker SVG at: {output_path} (Total: {total_contributions})")
 
 if __name__ == "__main__":
     calendar = None
