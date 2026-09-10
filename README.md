@@ -12,7 +12,7 @@
   <a href="mailto:evannixonpratama1@gmail.com"><img src="https://img.shields.io/badge/Email-evannixonpratama1%40gmail.com-161b22?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://github.com/evannixon"><img src="https://img.shields.io/badge/GitHub-evannixon-161b22?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
   <a href="https://linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-161b22?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <img src="https://img.shields.io/badge/Focus-Building%20%26%20Automating-e11d48?style=flat-square" alt="Focus">
+  <img src="https://img.shields.io/badge/Patrol-Active%20City%20Watch-e11d48?style=flat-square" alt="Patrol">
 </p>
 
 ---
@@ -107,24 +107,24 @@ Motto: With great code comes great responsibility 🕷️
 
 ---
 
-### 🕹️ Spider-Man: Rooftop Web Runner (Arcade Mini-Game)
+### 🕹️ Spider-Man: Rooftop Web Runner (Realistic 2D Engine)
 
 <p align="center">
   <img src="assets/spiderman_swing.gif" alt="Spider-Man Swinging" width="400" style="border-radius: 12px;" />
 </p>
 
 <p align="center">
-  <i>"Swinging through complex codebases, untangling data webs, and building robust systems one commit at a time."</i>
+  <i>"Webs attach realistically to actual building ledges with physical pendulum momentum. Dive down to gain speed, swing up to slingshot over skyscrapers!"</i>
 </p>
 
 <p align="center">
   <a href="https://evannixon.github.io/evannixon/">
-    <img src="https://img.shields.io/badge/🎮%20PLAY%20MINI--GAME-Click%20To%20Play%20In%20Browser-e11d48?style=for-the-badge&logoColor=white" alt="Play Mini-Game" />
+    <img src="https://img.shields.io/badge/🎮%20PLAY%20REALISTIC%20SWING-Play%20In%20Browser-e11d48?style=for-the-badge&logoColor=white" alt="Play Mini-Game" />
   </a>
 </p>
 
 <p align="center">
-  <sub>🕹️ <b>Controls:</b> Hold <b>SPACE</b> or <b>Click</b> to shoot web &amp; swing. Release to launch forward!</sub>
+  <sub>🕹️ <b>Controls:</b> Hold <b>SPACE</b> or <b>Click</b> to anchor web to nearest building ledge &amp; swing. Release to slingshot forward!</sub>
 </p>
 
 <details>
@@ -149,7 +149,18 @@ Threat: Low  |  Web-Fluid: 100%  |  Status: Crouched on Rooftop
 
 ---
 
-### 📊 GitHub Activity & Streak
+### 🕷️ City Patrol & Contribution Grid
+
+> *"Some days are hard, but someone has to keep the neighborhood running smoothly."*
+
+| 🕷️ Suit Protocol | 📊 Patrol Metric | ⚡ Status |
+| :--- | :--- | :---: |
+| **Mask HUD** | `Daily City Watch & Commits` | Active 🟢 |
+| **Web-Fluid Supply** | `66+ Deployments Logged` | 100% 🕸️ |
+| **Neighborhood Patrol** | `Streak Frequency Maintained` | 24/7 🛡️ |
+| **Spider-Sense Radar** | `Bug Fixes & Pipeline Optimization` | Calibrated ⚡ |
+
+<br>
 
 <p align="center">
   <a href="https://github.com/evannixon">
@@ -159,8 +170,8 @@ Threat: Low  |  Web-Fluid: 100%  |  Status: Crouched on Rooftop
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/evannixon?style=flat-square&logo=github&logoColor=white&color=e11d48&labelColor=161b22" alt="Followers" />
-  <img src="https://img.shields.io/badge/Public_Repos-7-e11d48?style=flat-square&logo=git&logoColor=white&labelColor=161b22" alt="Repositories" />
-  <img src="https://komarev.com/ghpvc/?username=evannixon&color=e11d48&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://img.shields.io/badge/Public_Patrols-7%20Repos-e11d48?style=flat-square&logo=git&logoColor=white&labelColor=161b22" alt="Repositories" />
+  <img src="https://komarev.com/ghpvc/?username=evannixon&color=e11d48&style=flat-square&label=PATROL+SCANS" alt="Profile Views" />
 </p>
 
 ---
