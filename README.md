@@ -1,6 +1,6 @@
 
 
-<h1 align="center">Evan Nixon</h1>
+<h1 align="center">Evan Nixon Pratama</h1>
 
 <p align="center">
   <b>Software Engineer</b> &bull; <b>Data Engineering & Automation</b> &bull; <b>Fullstack Web</b>
