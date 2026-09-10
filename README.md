@@ -176,17 +176,6 @@ Threat: Low  |  Web-Fluid: 100%  |  Status: Crouched on Rooftop
   </a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/evannixon?tab=achievements" target="_blank" title="Lihat Koleksi Achievements Resmi GitHub Evan">
-    <img src="assets/achievements/quickdraw.png" width="60" alt="Quickdraw" title="Quickdraw: Closed Issue within 5 mins" />
-    <img src="assets/achievements/yolo.png" width="60" alt="YOLO" title="YOLO: Merged PR without review" />
-    <img src="assets/achievements/pull-shark.png" width="60" alt="Pull Shark" title="Pull Shark: Merged Pull Requests" />
-    <img src="assets/achievements/pair-extraordinaire.png" width="60" alt="Pair Extraordinaire" title="Pair Extraordinaire: Co-authored commits" />
-    <img src="assets/achievements/galaxy-brain.png" width="60" alt="Galaxy Brain" title="Galaxy Brain: Accepted Answer in Discussions" />
-    <img src="assets/achievements/starstruck.png" width="60" alt="Starstruck" title="Starstruck: Repository with 16+ stars" />
-    <img src="assets/achievements/heart-on-your-sleeve.png" width="60" alt="Heart On Your Sleeve" title="Heart On Your Sleeve: Reacted with Heart" />
-  </a>
-</p>
 
 ---
 
