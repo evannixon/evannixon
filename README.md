@@ -109,12 +109,12 @@ Motto: With great code comes great responsibility 🕷️
 
 ### 🕷️ Your Friendly Neighborhood Developer
 
-> *"Swinging through complex codebases, untangling data webs, and building robust systems one commit at a time."*
+<p align="center">
+  <img src="assets/spiderman_swing.gif" alt="Spider-Man Swinging" width="420" style="border-radius: 12px;" />
+</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Role-Problem%20Solver-E23636?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Specialty-Backend%20%26%20Data-181717?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Sense-Spider--Sense%20Active-00F0FF?style=for-the-badge" />
+  <i>"Swinging through complex codebases, untangling data webs, and building robust systems one commit at a time."</i>
 </p>
 
 ---
