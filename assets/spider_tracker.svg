@@ -473,7 +473,7 @@
     <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-20&amp;to=2026-09-20" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-20&amp;to=2026-09-20" target="_blank"><rect x="805" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-09-20: 4 contributions (Click to filter day)</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-21&amp;to=2026-09-21" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-21&amp;to=2026-09-21" target="_blank"><rect x="805" y="80" width="11" height="11" rx="2" fill="#fb7185" class="contrib-box"><title>2026-09-21: 15 contributions (Click to filter day)</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-22&amp;to=2026-09-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-22&amp;to=2026-09-22" target="_blank"><rect x="805" y="95" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-09-22: 6 contributions (Click to filter day)</title></rect></a>
-    <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="110" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-09-23&amp;to=2026-09-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-09-23&amp;to=2026-09-23" target="_blank"><rect x="805" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-09-23: 6 contributions (Click to filter day)</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
@@ -495,19 +495,19 @@
   </g>
 
   <!-- Realtime Web Trail -->
-  <path d="M 45,85 L 165,100 L 270,85 L 375,145 L 495,115 L 570,115 L 645,115 L 720,115 Z" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-opacity="0.4" class="web-trail" pointer-events="none" />
+  <path d="M 45,85 L 165,115 L 270,115 L 390,100 L 510,70 L 585,85 L 660,100 L 735,115 Z" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-opacity="0.4" class="web-trail" pointer-events="none" />
 
   <!-- Spider Bot Crawling across user's real commits -->
   <g pointer-events="none">
     <use href="#spiderBot">
-      <animateMotion path="M 45,85 L 165,100 L 270,85 L 375,145 L 495,115 L 570,115 L 645,115 L 720,115 Z" dur="20s" repeatCount="indefinite" rotate="auto" />
+      <animateMotion path="M 45,85 L 165,115 L 270,115 L 390,100 L 510,70 L 585,85 L 660,100 L 735,115 Z" dur="20s" repeatCount="indefinite" rotate="auto" />
     </use>
   </g>
 
   <!-- Bottom Legend & Telemetry Bar -->
   <g transform="translate(40, 216)">
     <a href="https://github.com/evannixon?tab=overview" target="_blank" style="text-decoration: none;">
-      <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">1515+ LOGGED</tspan> | STATUS: <tspan fill="#e11d48" font-weight="700">ONLINE 🟢</tspan></text>
+      <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">1521+ LOGGED</tspan> | STATUS: <tspan fill="#e11d48" font-weight="700">ONLINE 🟢</tspan></text>
     </a>
 
     <!-- Legend -->
