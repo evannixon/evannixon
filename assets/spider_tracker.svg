@@ -473,8 +473,8 @@
     <a href="https://github.com/evannixon?tab=overview&amp;from=2026-11-22&amp;to=2026-11-22" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-11-22&amp;to=2026-11-22" target="_blank"><rect x="805" y="65" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-11-22: 3 contributions (Click to filter day)</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview&amp;from=2026-11-23&amp;to=2026-11-23" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-11-23&amp;to=2026-11-23" target="_blank"><rect x="805" y="80" width="11" height="11" rx="2" fill="#e11d48" class="contrib-box"><title>2026-11-23: 11 contributions (Click to filter day)</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview&amp;from=2026-11-24&amp;to=2026-11-24" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-11-24&amp;to=2026-11-24" target="_blank"><rect x="805" y="95" width="11" height="11" rx="2" fill="#881337" class="contrib-box"><title>2026-11-24: 5 contributions (Click to filter day)</title></rect></a>
-    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-11-25&amp;to=2026-11-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-11-25&amp;to=2026-11-25" target="_blank"><rect x="805" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-11-25: 6 contributions (Click to filter day)</title></rect></a>
-    <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="125" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-11-25&amp;to=2026-11-25" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-11-25&amp;to=2026-11-25" target="_blank"><rect x="805" y="110" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-11-25: 7 contributions (Click to filter day)</title></rect></a>
+    <a href="https://github.com/evannixon?tab=overview&amp;from=2026-11-26&amp;to=2026-11-26" xlink:href="https://github.com/evannixon?tab=overview&amp;from=2026-11-26&amp;to=2026-11-26" target="_blank"><rect x="805" y="125" width="11" height="11" rx="2" fill="#be123c" class="contrib-box"><title>2026-11-26: 6 contributions (Click to filter day)</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="140" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
     <a href="https://github.com/evannixon?tab=overview" xlink:href="https://github.com/evannixon?tab=overview" target="_blank"><rect x="805" y="155" width="11" height="11" rx="2" fill="#161b22" class="contrib-box"><title>0 contributions</title></rect></a>
   </g>
@@ -495,19 +495,19 @@
   </g>
 
   <!-- Realtime Web Trail -->
-  <path d="M 45,70 L 150,130 L 285,130 L 390,115 L 465,160 L 555,100 L 630,145 L 720,85 Z" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-opacity="0.4" class="web-trail" pointer-events="none" />
+  <path d="M 45,70 L 150,145 L 285,160 L 390,160 L 480,115 L 570,70 L 645,130 L 735,85 Z" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-opacity="0.4" class="web-trail" pointer-events="none" />
 
   <!-- Spider Bot Crawling across user's real commits -->
   <g pointer-events="none">
     <use href="#spiderBot">
-      <animateMotion path="M 45,70 L 150,130 L 285,130 L 390,115 L 465,160 L 555,100 L 630,145 L 720,85 Z" dur="20s" repeatCount="indefinite" rotate="auto" />
+      <animateMotion path="M 45,70 L 150,145 L 285,160 L 390,160 L 480,115 L 570,70 L 645,130 L 735,85 Z" dur="20s" repeatCount="indefinite" rotate="auto" />
     </use>
   </g>
 
   <!-- Bottom Legend & Telemetry Bar -->
   <g transform="translate(40, 216)">
     <a href="https://github.com/evannixon?tab=overview" target="_blank" style="text-decoration: none;">
-      <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">1969+ LOGGED</tspan> | STATUS: <tspan fill="#e11d48" font-weight="700">ONLINE 🟢</tspan></text>
+      <text x="0" y="9" fill="#64748b" font-size="9" letter-spacing="0.8" class="tech-font">RADAR COMMITS: <tspan fill="#e11d48" font-weight="700">1976+ LOGGED</tspan> | STATUS: <tspan fill="#e11d48" font-weight="700">ONLINE 🟢</tspan></text>
     </a>
 
     <!-- Legend -->
